@@ -1,18 +1,9 @@
-// app/views/users/index.php
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Users List</title>
-</head>
+<?php $title = 'User Page'; ?>
 
-<body>
-    <h1>Users List</h1>
-    <ul>
-        <?php foreach ($users as $user) : ?>
-            <li><?= htmlspecialchars($user['name']) ?></li>
-        <?php endforeach; ?>
-    </ul>
-</body>
-
-</html>
+<h2>List User</h2>
+<?php foreach ($users as $user) : ?>
+<li><?= htmlspecialchars($user['email']) ?></li>
+<?php endforeach; ?>

@@ -10,9 +10,9 @@ class UsersController
     {
         $model = new UserModel();
         $users = $model->getUsers();
-        // print($users);
-        // app/views/users/index.php
-        print_r("call here" . BASE_PATH);
-        require_once BASE_PATH . '\app\views\users\index.php';
+        ob_start(); // start output buffering
+        require_once BASE_PATH . '/app/views/users/index.php';
+        $content = ob_get_clean();
+        require_once BASE_PATH . '/app/views/master.php';
     }
 }
