@@ -21,6 +21,7 @@ function getRootUrl()
 
 $rootUrl = getRootUrl();
 define('ROOT_URL', $rootUrl);
+
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->load();
 

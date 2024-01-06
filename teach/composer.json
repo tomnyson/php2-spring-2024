@@ -1,11 +1,17 @@
 {
+    "name": "sonle/teach",
     "autoload": {
         "psr-4": {
-            "Teach\\App\\": "htdocs/teach/app/"
+            "Sonle\\Teach\\": "src/"
         }
     },
+    "authors": [
+        {
+            "name": "tomnyson",
+            "email": "tabletkindfire@gmail.com"
+        }
+    ],
     "require": {
-        "vlucas/phpdotenv": "^5.6",
         "fabpot/goutte": "^4.0"
     }
 }
