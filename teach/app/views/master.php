@@ -10,26 +10,26 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?= ROOT_URL ?>/assets/images/favicon.ico" />
 
     <!-- CSS
 	============================================ -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/vendor/bootstrap.min.css" />
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="assets/css/vendor/font.awesome.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/vendor/font.awesome.min.css" />
     <!-- Ionicons -->
-    <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/vendor/ionicons.min.css" />
     <!-- Slick CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/slick.min.css" />
     <!-- Animation -->
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/animate.min.css" />
     <!-- jQuery Ui -->
-    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/jquery-ui.min.css" />
     <!-- Nice Select -->
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/nice-select.min.css" />
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/magnific-popup.css" />
 
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from the above) -->
 
@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css"> -->
 
     <!-- Main Style CSS (Please use minify version for better website load performance) -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/style.css" />
     <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
 </head>
 
@@ -71,7 +71,7 @@
                                 <div class="col-lg-2 col-xl-2 col-sm-6 col-6 col-custom">
                                     <div class="header-logo d-flex align-items-center">
                                         <a href="index.html">
-                                            <img class="img-full" src="assets/images/logo/logo.png" alt="Header Logo" />
+                                            <img class="img-full" src="<?= ROOT_URL ?>/assets/images/logo/logo.png" alt="Header Logo" />
                                         </a>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
                                                 <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="assets/images/cart/1.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>assets/images/cart/1.jpg" alt="" /></a>
                                                         </div>
                                                         <div class="cart-text">
                                                             <h5 class="title">
@@ -236,7 +236,7 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="assets/images/cart/2.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/2.jpg" alt="" /></a>
                                                         </div>
                                                         <div class="cart-text">
                                                             <h5 class="title">
@@ -254,7 +254,7 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="assets/images/cart/3.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/3.jpg" alt="" /></a>
                                                         </div>
                                                         <div class="cart-text">
                                                             <h5 class="title">
@@ -304,7 +304,7 @@
                                 <div class="col-lg-2 col-xl-2 col-sm-6 col-6 col-custom">
                                     <div class="header-logo">
                                         <a href="index.html">
-                                            <img class="img-full" src="assets/images/logo/logo.png" alt="Header Logo" />
+                                            <img class="img-full" src="<?= ROOT_URL ?>/assets/images/logo/logo.png" alt="Header Logo" />
                                         </a>
                                     </div>
                                 </div>
@@ -452,7 +452,7 @@
                                                 <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="assets/images/cart/1.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/1.jpg" alt="" /></a>
                                                         </div>
                                                         <div class="cart-text">
                                                             <h5 class="title">
@@ -469,7 +469,7 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="assets/images/cart/2.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/2.jpg" alt="" /></a>
                                                         </div>
                                                         <div class="cart-text">
                                                             <h5 class="title">
@@ -487,7 +487,7 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="assets/images/cart/3.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/3.jpg" alt="" /></a>
                                                         </div>
                                                         <div class="cart-text">
                                                             <h5 class="title">
@@ -755,7 +755,7 @@
                     </div>
                     <div class="col-xl-6 col-lg-7 col-md-12 col-custom">
                         <div class="feature-image">
-                            <img src="assets/images/feature/feature-1.jpg" alt="Obrien Feature" />
+                            <img src="<?= ROOT_URL ?>/assets/images/feature/feature-1.jpg" alt="Obrien Feature" />
                         </div>
                     </div>
                 </div>
@@ -801,8 +801,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -843,8 +843,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/3.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -885,8 +885,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="label-product">
@@ -930,8 +930,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/7.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/7.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -972,8 +972,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/9.jpg" alt="" class="product-image-1" />
-                                            <img src="assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/9.jpg" alt="" class="product-image-1" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1022,7 +1022,7 @@
                 <div class="row">
                     <div class="col-md-5 col-lg-6 text-center col-custom">
                         <div class="banner-thumb h-100 d-flex justify-content-center align-items-center">
-                            <img src="assets/images/banner/thumb/1.png" alt="Banner Thumb" />
+                            <img src="<?= ROOT_URL ?>/assets/images/banner/thumb/1.png" alt="Banner Thumb" />
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6 text-center justify-content-center col-custom">
@@ -1045,21 +1045,21 @@
                     <div class="col-md-4 col-sm-12 col-custom">
                         <div class="banner-image hover-style">
                             <a class="d-block" href="shop.html">
-                                <img class="w-100" src="assets/images/banner/small-banner/1-1.png" alt="Banner Image" />
+                                <img class="w-100" src="<?= ROOT_URL ?>/assets/images/banner/small-banner/1-1.png" alt="Banner Image" />
                             </a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-custom">
                         <div class="banner-image hover-style">
                             <a class="d-block" href="shop.html">
-                                <img class="w-100" src="assets/images/banner/small-banner/1-2.png" alt="Banner Image" />
+                                <img class="w-100" src="<?= ROOT_URL ?>/assets/images/banner/small-banner/1-2.png" alt="Banner Image" />
                             </a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-custom">
                         <div class="banner-image hover-style mb-0">
                             <a class="d-block" href="shop.html">
-                                <img class="w-100" src="assets/images/banner/small-banner/1-3.png" alt="Banner Image" />
+                                <img class="w-100" src="<?= ROOT_URL ?>/assets/images/banner/small-banner/1-3.png" alt="Banner Image" />
                             </a>
                         </div>
                     </div>
@@ -1106,8 +1106,8 @@
                                 <div class="single-product position-relative mb-30">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1146,8 +1146,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/10.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/10.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1188,8 +1188,8 @@
                                 <div class="single-product position-relative mb-30">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/3.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1228,8 +1228,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/7.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/7.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1270,8 +1270,8 @@
                                 <div class="single-product position-relative mb-30">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="label-product">
@@ -1313,8 +1313,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/6.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/3.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/6.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="label-product">
@@ -1358,8 +1358,8 @@
                                 <div class="single-product position-relative mb-30">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/7.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/7.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1398,8 +1398,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="assets/images/product/3.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-2 position-absolute w-100" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1440,8 +1440,8 @@
                                 <div class="single-product position-relative mb-30">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/9.jpg" alt="" class="product-image-1" />
-                                            <img src="assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/9.jpg" alt="" class="product-image-1" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1480,8 +1480,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="assets/images/product/4.jpg" alt="" class="product-image-1" />
-                                            <img src="assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-1" />
+                                            <img src="<?= ROOT_URL ?>/assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -1600,7 +1600,7 @@
                             <div class="single-blog">
                                 <div class="single-blog-thumb">
                                     <a href="blog.html">
-                                        <img src="assets/images/blog/medium-size/1.jpg" alt="Blog Image" />
+                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/1.jpg" alt="Blog Image" />
                                     </a>
                                 </div>
                                 <div class="single-blog-content position-relative">
@@ -1624,7 +1624,7 @@
                             <div class="single-blog">
                                 <div class="single-blog-thumb">
                                     <a href="blog.html">
-                                        <img src="assets/images/blog/medium-size/2.jpg" alt="Blog Image" />
+                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/2.jpg" alt="Blog Image" />
                                     </a>
                                 </div>
                                 <div class="single-blog-content position-relative">
@@ -1648,7 +1648,7 @@
                             <div class="single-blog">
                                 <div class="single-blog-thumb">
                                     <a href="blog.html">
-                                        <img src="assets/images/blog/medium-size/3.jpg" alt="Blog Image" />
+                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/3.jpg" alt="Blog Image" />
                                     </a>
                                 </div>
                                 <div class="single-blog-content position-relative">
@@ -1671,7 +1671,7 @@
                             <div class="single-blog">
                                 <div class="single-blog-thumb">
                                     <a href="blog.html">
-                                        <img src="assets/images/blog/medium-size/4.jpg" alt="Blog Image" />
+                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/4.jpg" alt="Blog Image" />
                                     </a>
                                 </div>
                                 <div class="single-blog-content position-relative">
@@ -1726,7 +1726,7 @@
                             <div class="single-footer-widget m-0">
                                 <div class="footer-logo">
                                     <a href="index.html">
-                                        <img src="assets/images/logo/footer.png" alt="Logo Image" />
+                                        <img src="<?= ROOT_URL ?>/assets/images/logo/footer.png" alt="Logo Image" />
                                     </a>
                                 </div>
                                 <p class="desc-content">
@@ -1846,7 +1846,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 text-center">
                                 <div class="product-image">
-                                    <img src="assets/images/product/1.jpg" alt="Product Image" />
+                                    <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="Product Image" />
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
@@ -1918,28 +1918,28 @@
 ============================================ -->
 
     <!-- jQuery JS -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- jQuery Migrate JS -->
-    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
     <!-- Modernizer JS -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/vendor/bootstrap.bundle.min.js"></script>
     <!-- Slick Slider JS -->
-    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/plugins/slick.min.js"></script>
     <!-- Countdown JS -->
-    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.countdown.min.js"></script>
     <!-- Ajax JS -->
-    <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.ajaxchimp.min.js"></script>
     <!-- Jquery Nice Select JS -->
-    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.nice-select.min.js"></script>
     <!-- Jquery Ui JS -->
-    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery-ui.min.js"></script>
     <!-- jquery magnific popup js -->
-    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
     <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="<?= ROOT_URL ?>/assets/js/main.js"></script>
 </body>
 
 <!-- Mirrored from template.hasthemes.com/obrien/obrien/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 02:17:55 GMT -->
