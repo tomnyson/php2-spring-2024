@@ -13,7 +13,7 @@ class UserModel
     private $dbHelper;
     public function __construct()
     {
-        $database = new \Database(); // Adjust the namespace if Database is in a different namespace
+        $database = new \Database();
         $this->conn = $database->getConnection();
         $this->dbHelper = new \DatabaseHelper($this->conn);
     }

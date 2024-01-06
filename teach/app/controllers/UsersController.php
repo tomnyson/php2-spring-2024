@@ -10,7 +10,7 @@ class UsersController
     {
         $model = new UserModel();
         $users = $model->getUsers();
-        ob_start(); // start output buffering
+        ob_start();
         require_once BASE_PATH . '/app/views/users/index.php';
         $content = ob_get_clean();
         require_once BASE_PATH . '/app/views/master.php';

@@ -3,5 +3,8 @@
         "psr-4": {
             "Teach\\App\\": "htdocs/teach/app/"
         }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
     }
 }

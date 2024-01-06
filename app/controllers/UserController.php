@@ -10,6 +10,8 @@ class UserController
     {
         $userModel = new UserModel();
         $users = $userModel->getAll();
+        // header("Content-Type: application/json");
+        // echo json_encode($users);
         require_once BASE_PATH . '/app/views/users/index.php';
     }
 
@@ -18,9 +20,23 @@ class UserController
         echo "hello world";
     }
 
+    public function create()
+    {
+        echo "create";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (isset($_POST['name']) && isset($_POST['email'])) {
+                echo "call action create";
+                var_dump($_POST);
+            }
+        }
+        require_once BASE_PATH . '/app/views/users/create.php';
+    }
     public function post()
     {
-        echo "hello world";
+        if (isset($_POST['name']) && isset($_POST['email'])) {
+            echo "call action create";
+            var_dump($_POST);
+        }
     }
 
     public function update()
