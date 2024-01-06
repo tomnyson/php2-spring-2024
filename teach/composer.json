@@ -12,6 +12,7 @@
         }
     ],
     "require": {
-        "fabpot/goutte": "^4.0"
+        "fabpot/goutte": "^4.0",
+        "vlucas/phpdotenv": "^5.6"
     }
 }
