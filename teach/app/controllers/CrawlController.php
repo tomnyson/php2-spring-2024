@@ -5,45 +5,8 @@ namespace Controllers;
 use Goutte\Client;
 use Models\ProductModel as ProductModel;
 use Models\CarModel as CarModel;
+use DTO\CarDTO as CarDTO;
 
-class Product
-{
-    public $name;
-    public $price;
-    public $image;
-    // public function __construct($name, $price, $image)
-    // {
-    //     $this->name = $name;
-    //     $this->price = $price;
-    //     $this->image = $image;
-    // }
-    public function setName($name)
-    {
-        $this->name = $name;
-    }
-    public function getName()
-    {
-        return $this->name;
-    }
-    public function getPrice()
-    {
-        return $this->price;
-    }
-
-    public function setPrice($price)
-    {
-        $this->price = $price;
-    }
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
-
-    public function getImageUrl()
-    {
-        return $this->image;
-    }
-}
 class CrawlController
 {
 
@@ -52,7 +15,7 @@ class CrawlController
         $client = new Client();
         $numberPage = 5;
         $products = [];
-        $productMode =  new ProductModel();
+        $productMode =  new CarModel();
         for ($i = 1; $i <= $numberPage; $i++) {
             $crawler = $client->request('GET', "https://thegioitraicay.net/collections/all?page=$i");
 
@@ -78,18 +41,20 @@ class CrawlController
                 'name' => $product->getName(),
                 'price' => $product->getPrice(),
                 'image' => $product->getImageUrl(),
+                "km" => $product->getKm(),
+                "brand" => $product->getBrand(),
+                "year" => $product->getYear(),
+                "status" => $product->getStatus()
             );
             $productMode->insert($insert);
         }
-
-        // var_dump($products); // To check the structure and data of the products array
     }
 
     public function getCar()
     {
         $products = [];
         $i = 1;
-
+        $productMode =  new CarModel();
         while (true) {
             echo "Page: $i\n";
             $products = array_merge($products, $this->scrapePage("https://xeluottoantrung.com/san-pham?p=$i"));
@@ -99,7 +64,18 @@ class CrawlController
             $i++;
         }
 
-        var_dump($products);
+        foreach ($products as $product) {
+            $insert = array(
+                'name' => $product->getName(),
+                'price' => $product->getPrice(),
+                'image' => $product->getImageUrl(),
+                "km" => $product->getKm(),
+                "brand" => $product->getBrand(),
+                "year" => $product->getYear(),
+                "status" => $product->getStatus()
+            );
+            $productMode->insert($insert);
+        }
 
         // Save products to database or perform other operations
     }
@@ -112,6 +88,32 @@ class CrawlController
         return trim($lastPage) === 'Last';
     }
 
+    function convertToNumber($string, $type = "price")
+    {
+        $number = 0;
+        if ($type == "price") {
+            $numberString = preg_replace('/[^0-9.]/', '', $string);
+
+            $number = floatval($numberString);
+
+            if (strpos($string, 'TRIỆU') !== false) {
+                $number *= 1000000;
+            }
+        }
+        if ($type == "odo") {
+            $numberString = preg_replace('/[^0-9]/', '', $string);
+            $number = intval($numberString);
+        }
+
+        return $number;
+    }
+
+    function getFirstWord($string)
+    {
+        preg_match('/^\S+/', $string, $matches);
+        return $matches[0];
+    }
+
     private function scrapePage($url)
     {
         $client = new Client();
@@ -119,14 +121,16 @@ class CrawlController
         $products = [];
 
         $crawler->filter('.grid_product a')->each(function ($node) use (&$products) {
-            $product = new Product();
-            // Populate the product object with scraped data
-            // Add checks if the elements exist
-            $product->setName($node->attr('title') ?? 'N/A');
-            $product->setImage($node->filter(".sp__img  img")->attr('src') ?? 'N/A');
-            $product->setPrice($node->filter(".sp__price")->text() ?? 'N/A');
-            // ... continue setting other properties ...
-
+            $product = new CarDTO();
+            $product->setName($node->attr('title') ?? '');
+            $brand = $this->getFirstWord($product->getName());
+            $product->setBrand($brand);
+            $product->setImage($node->filter(".sp__img  img")->attr('src') ?? null);
+            $product->setPrice($this->convertToNumber($node->filter(".sp__price")->text(), "price") ?? 0);
+            $product->setStatus($node->filter(".sp__tinhtrang")->text() ?? 'N/A');
+            $product->setYear($this->convertToNumber($node->filter(".spi__item:nth-child(1) .spi__title span")->text(), "price") ?? 'N/A');
+            $product->setKm($this->convertToNumber($node->filter(".spi__item:nth-child(3) .spi__title span")->text(), "odo") ?? 0);
+            $product->setLocation($node->filter(".spi__item:nth-child(4) .spi__title span")->text() ?? 0);
             $products[] = $product;
         });
 

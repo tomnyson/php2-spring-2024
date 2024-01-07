@@ -47,6 +47,19 @@ class DatabaseHelper
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+
+    public function readWithCondition($sql, $conditions)
+    {
+
+        $stmt = $this->pdo->prepare($sql);
+        foreach ($conditions as $key => $value) {
+            $stmt->bindValue(":$key", $value);
+        }
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
     public function update($table, $data, $conditions)
     {
         $updateFields = [];
