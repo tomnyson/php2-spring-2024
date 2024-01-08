@@ -64,6 +64,7 @@ class CrawlController
             $i++;
         }
 
+        var_dump($products);
         foreach ($products as $product) {
             $insert = array(
                 'name' => $product->getName(),

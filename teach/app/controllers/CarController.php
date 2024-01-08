@@ -23,4 +23,15 @@ class CarController
         header('Content-Type: application/json');
         echo $jsonData;
     }
+    public function categories()
+    {
+        $carModel = new CarModel();
+        $cars = $carModel->getCategories();
+
+
+        $jsonData = json_encode($cars);
+
+        header('Content-Type: application/json');
+        echo $jsonData;
+    }
 }
