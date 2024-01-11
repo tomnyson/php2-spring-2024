@@ -55,6 +55,7 @@ $router->addRoute('users/index', ['UsersController', 'index']);
 $router->addRoute('crawl/index', ['CrawlController', 'index']);
 $router->addRoute('crawl/car', ['CrawlController', 'getCar']);
 $router->addRoute('car/list', ['CarController', 'list']);
+$router->addRoute('car/categories', ['CarController', 'categories']);
 
 // Dynamic routes
 $router->addRoute('post/{id}', ['PostController', 'show']);

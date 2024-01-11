@@ -22,6 +22,12 @@ class CarModel
         return $this->dbHelper->read($this->table_name);
     }
 
+    public function getCategories()
+    {
+        $query = "select brand,  count(brand) as num from $this->table_name group by brand";
+        return $this->dbHelper->readWithCondition($query, []);
+    }
+
     public function getFilteredCars($params)
     {
         $query = "SELECT * FROM cars WHERE 1 = 1";
@@ -57,13 +63,6 @@ class CarModel
             $bindings['year'] = $params['year'];
         }
 
-        // $stmt = $this->conn->prepare($query);
-        // foreach ($bindings as $key => $value) {
-        //     $stmt->bindValue(":$key", $value);
-        // }
-
-        // $stmt->execute();
-        // return $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $this->dbHelper->readWithCondition($query, $bindings);
     }
 

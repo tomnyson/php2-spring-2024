@@ -48,7 +48,7 @@ class DatabaseHelper
     }
 
 
-    public function readWithCondition($sql, $conditions)
+    public function readWithCondition($sql = "", $conditions = [])
     {
 
         $stmt = $this->pdo->prepare($sql);
