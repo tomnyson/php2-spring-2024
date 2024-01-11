@@ -38,7 +38,7 @@ $router->addRoute('user/index', ['UserController', 'index']);
 $router->addRoute('crawl/index', ['CrawlController', 'index']);
 
 // Dynamic routes
-$router->addRoute('post/{id}', ['PostController', 'show']);
+$router->addRoute('product/{id}', ['ProductController', 'show']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);
 
 $url = $_GET['url'] ?? 'home/index';

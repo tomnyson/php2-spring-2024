@@ -58,7 +58,7 @@ $router->addRoute('car/list', ['CarController', 'list']);
 $router->addRoute('car/categories', ['CarController', 'categories']);
 
 // Dynamic routes
-$router->addRoute('post/{id}', ['PostController', 'show']);
+$router->addRoute('product/{id}', ['ProductController', 'detail']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);
 
 $url = $_GET['url'] ?? 'home/index';

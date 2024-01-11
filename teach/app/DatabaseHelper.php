@@ -36,7 +36,6 @@ class DatabaseHelper
             }
             $sql .= " WHERE " . implode(' AND ', $placeholders);
         }
-
         $stmt = $this->pdo->prepare($sql);
 
         foreach ($conditions as $key => $value) {

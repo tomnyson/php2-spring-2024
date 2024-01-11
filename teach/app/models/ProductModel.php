@@ -20,6 +20,18 @@ class ProductModel
         return $this->dbHelper->read($this->table_name);
     }
 
+    public function getListProductLimit($limit = 0)
+    {
+        $sql = "SELECT * FROM $this->table_name limit $limit";
+        return $this->dbHelper->readWithCondition($sql);
+    }
+
+    public function getProductById($id = 0)
+    {
+        $condition = array("id" => $id);
+        return $this->dbHelper->read($this->table_name, $condition);
+    }
+
     public function insert($data)
     {
         return $this->dbHelper->create($this->table_name, $data);

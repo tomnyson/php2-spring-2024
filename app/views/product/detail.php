@@ -1,67 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
-<!-- Mirrored from template.hasthemes.com/obrien/obrien/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 02:17:11 GMT -->
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Obrien - Organic Food HTML5 Template</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= ROOT_URL ?>/assets/images/favicon.ico" />
 
-    <!-- CSS
-	============================================ -->
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/vendor/bootstrap.min.css" />
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/vendor/font.awesome.min.css" />
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/vendor/ionicons.min.css" />
-    <!-- Slick CSS -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/slick.min.css" />
-    <!-- Animation -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/animate.min.css" />
-    <!-- jQuery Ui -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/jquery-ui.min.css" />
-    <!-- Nice Select -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/nice-select.min.css" />
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/plugins/magnific-popup.css" />
-
-    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from the above) -->
-
-    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css"> -->
-
-    <!-- Main Style CSS (Please use minify version for better website load performance) -->
-    <link rel="stylesheet" href="<?= ROOT_URL ?>/assets/css/style.css" />
-    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
-</head>
+<!-- Mirrored from template.hasthemes.com/obrien/obrien/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 02:18:04 GMT -->
 
 <body>
-    <div class="home-wrapper home-1">
-        <!-- Header Area Start Here -->
+
+    <div class="shop-wrapper">
         <header class="main-header-area">
-            <!-- Header Top Area Start Here -->
-            <div class="header-top-area">
-                <div class="container container-default-2 custom-area">
-                    <div class="row">
-                        <div class="col-12 col-custom header-top-wrapper text-center">
-                            <div class="short-desc text-white">
-                                <p>Get 35% off for new product</p>
-                            </div>
-                            <div class="header-top-button">
-                                <a href="shop-fullwidth.html">Shop Now</a>
-                            </div>
-                            <span class="top-close-button">X</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Header Top Area End Here -->
             <!-- Main Header Area Start -->
             <div class="main-header">
                 <div class="container container-default custom-area">
@@ -71,7 +17,7 @@
                                 <div class="col-lg-2 col-xl-2 col-sm-6 col-6 col-custom">
                                     <div class="header-logo d-flex align-items-center">
                                         <a href="index.html">
-                                            <img class="img-full" src="<?= ROOT_URL ?>/assets/images/logo/logo.png" alt="Header Logo" />
+                                            <img class="img-full" src="assets/images/logo/logo.png" alt="Header Logo">
                                         </a>
                                     </div>
                                 </div>
@@ -79,19 +25,19 @@
                                     <nav class="main-nav d-flex justify-content-center">
                                         <ul class="nav">
                                             <li>
-                                                <a class="active" href="index.html">
+                                                <a href="index.html">
                                                     <span class="menu-text"> Home</span>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul class="dropdown-submenu dropdown-hover">
-                                                    <li><a class="active" href="index.html">Home Page - 1</a></li>
+                                                    <li><a href="index.html">Home Page - 1</a></li>
                                                     <li><a href="index-2.html">Home Page - 2</a></li>
                                                     <li><a href="index-3.html">Home Page - 3</a></li>
                                                     <li><a href="index-4.html">Home Page - 4</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="shop.html">
+                                                <a class="active" href="shop.html">
                                                     <span class="menu-text">Shop</span>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
@@ -112,21 +58,16 @@
                                                     <div class="menu-colum">
                                                         <ul>
                                                             <li><span class="mega-menu-text">Product</span></li>
-                                                            <li><a href="product-details.html">Single Product</a></li>
-                                                            <li>
-                                                                <a href="variable-product-details.html">Variable
-                                                                    Product</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="external-product-details.html">External
-                                                                    Product</a>
-                                                            </li>
+                                                            <li><a class="active" href="product-details.html">Single
+                                                                    Product</a></li>
+                                                            <li><a href="variable-product-details.html">Variable
+                                                                    Product</a></li>
+                                                            <li><a href="external-product-details.html">External
+                                                                    Product</a></li>
                                                             <li><a href="gallery-product-details.html">Gallery
                                                                     Product</a></li>
-                                                            <li>
-                                                                <a href="countdown-product-details.html">Countdown
-                                                                    Product</a>
-                                                            </li>
+                                                            <li><a href="countdown-product-details.html">Countdown
+                                                                    Product</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="menu-colum">
@@ -148,21 +89,16 @@
                                                 </a>
                                                 <ul class="dropdown-submenu dropdown-hover">
                                                     <li><a href="blog.html">Blog Left Sidebar</a></li>
-                                                    <li>
-                                                        <a href="blog-list-right-sidebar.html">Blog List Right
-                                                            Sidebar</a>
-                                                    </li>
+                                                    <li><a href="blog-list-right-sidebar.html">Blog List Right
+                                                            Sidebar</a></li>
                                                     <li><a href="blog-list-fullwidth.html">Blog List Fullwidth</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid Page</a></li>
-                                                    <li>
-                                                        <a href="blog-grid-right-sidebar.html">Blog Grid Right
-                                                            Sidebar</a>
-                                                    </li>
+                                                    <li><a href="blog-grid-right-sidebar.html">Blog Grid Right
+                                                            Sidebar</a></li>
                                                     <li><a href="blog-grid-fullwidth.html">Blog Grid Fullwidth</a></li>
                                                     <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="blog-details-fullwidth.html">Blog Details Fullwidth</a>
+                                                    <li><a href="blog-details-fullwidth.html">Blog Details Fullwidth</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -219,12 +155,11 @@
                                                 <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>assets/images/cart/1.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="assets/images/cart/1.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-text">
-                                                            <h5 class="title">
-                                                                <a href="cart.html">11. Product with video - navy</a>
-                                                            </h5>
+                                                            <h5 class="title"><a href="cart.html">11. Product with video
+                                                                    - navy</a></h5>
                                                             <div class="cart-text-btn">
                                                                 <div class="cart-qty">
                                                                     <span>1×</span>
@@ -236,13 +171,11 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/2.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="assets/images/cart/2.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-text">
-                                                            <h5 class="title">
-                                                                <a href="cart.html" title="10. This is the large title for testing large title and there is an image for testing - white">10.
-                                                                    This is the large title for testing...</a>
-                                                            </h5>
+                                                            <h5 class="title"><a href="cart.html" title="10. This is the large title for testing large title and there is an image for testing - white">10.
+                                                                    This is the large title for testing...</a></h5>
                                                             <div class="cart-text-btn">
                                                                 <div class="cart-qty">
                                                                     <span>1×</span>
@@ -254,13 +187,11 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/3.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="assets/images/cart/3.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-text">
-                                                            <h5 class="title">
-                                                                <a href="cart.html">1. New and sale badge product - s /
-                                                                    red</a>
-                                                            </h5>
+                                                            <h5 class="title"><a href="cart.html">1. New and sale badge
+                                                                    product - s / red</a></h5>
                                                             <div class="cart-text-btn">
                                                                 <div class="cart-qty">
                                                                     <span>1×</span>
@@ -304,7 +235,7 @@
                                 <div class="col-lg-2 col-xl-2 col-sm-6 col-6 col-custom">
                                     <div class="header-logo">
                                         <a href="index.html">
-                                            <img class="img-full" src="<?= ROOT_URL ?>/assets/images/logo/logo.png" alt="Header Logo" />
+                                            <img class="img-full" src="assets/images/logo/logo.png" alt="Header Logo">
                                         </a>
                                     </div>
                                 </div>
@@ -312,19 +243,19 @@
                                     <nav class="main-nav d-flex justify-content-center">
                                         <ul class="nav">
                                             <li>
-                                                <a class="active" href="index.html">
+                                                <a href="index.html">
                                                     <span class="menu-text"> Home</span>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                                 <ul class="dropdown-submenu dropdown-hover">
-                                                    <li><a class="active" href="index.html">Home Page - 1</a></li>
+                                                    <li><a href="index.html">Home Page - 1</a></li>
                                                     <li><a href="index-2.html">Home Page - 2</a></li>
                                                     <li><a href="index-3.html">Home Page - 3</a></li>
                                                     <li><a href="index-4.html">Home Page - 4</a></li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="shop.html">
+                                                <a class="active" href="shop.html">
                                                     <span class="menu-text">Shop</span>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
@@ -345,21 +276,16 @@
                                                     <div class="menu-colum">
                                                         <ul>
                                                             <li><span class="mega-menu-text">Product</span></li>
-                                                            <li><a href="product-details.html">Single Product</a></li>
-                                                            <li>
-                                                                <a href="variable-product-details.html">Variable
-                                                                    Product</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="external-product-details.html">External
-                                                                    Product</a>
-                                                            </li>
+                                                            <li><a class="active" href="product-details.html">Single
+                                                                    Product</a></li>
+                                                            <li><a href="variable-product-details.html">Variable
+                                                                    Product</a></li>
+                                                            <li><a href="external-product-details.html">External
+                                                                    Product</a></li>
                                                             <li><a href="gallery-product-details.html">Gallery
                                                                     Product</a></li>
-                                                            <li>
-                                                                <a href="countdown-product-details.html">Countdown
-                                                                    Product</a>
-                                                            </li>
+                                                            <li><a href="countdown-product-details.html">Countdown
+                                                                    Product</a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="menu-colum">
@@ -381,21 +307,16 @@
                                                 </a>
                                                 <ul class="dropdown-submenu dropdown-hover">
                                                     <li><a href="blog.html">Blog Left Sidebar</a></li>
-                                                    <li>
-                                                        <a href="blog-list-right-sidebar.html">Blog List Right
-                                                            Sidebar</a>
-                                                    </li>
+                                                    <li><a href="blog-list-right-sidebar.html">Blog List Right
+                                                            Sidebar</a></li>
                                                     <li><a href="blog-list-fullwidth.html">Blog List Fullwidth</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid Page</a></li>
-                                                    <li>
-                                                        <a href="blog-grid-right-sidebar.html">Blog Grid Right
-                                                            Sidebar</a>
-                                                    </li>
+                                                    <li><a href="blog-grid-right-sidebar.html">Blog Grid Right
+                                                            Sidebar</a></li>
                                                     <li><a href="blog-grid-fullwidth.html">Blog Grid Fullwidth</a></li>
                                                     <li><a href="blog-details-sidebar.html">Blog Details Sidebar</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="blog-details-fullwidth.html">Blog Details Fullwidth</a>
+                                                    <li><a href="blog-details-fullwidth.html">Blog Details Fullwidth</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -452,12 +373,11 @@
                                                 <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/1.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="assets/images/cart/1.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-text">
-                                                            <h5 class="title">
-                                                                <a href="cart.html">11. Product with video - navy</a>
-                                                            </h5>
+                                                            <h5 class="title"><a href="cart.html">11. Product with video
+                                                                    - navy</a></h5>
                                                             <div class="cart-text-btn">
                                                                 <div class="cart-qty">
                                                                     <span>1×</span>
@@ -469,13 +389,11 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/2.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="assets/images/cart/2.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-text">
-                                                            <h5 class="title">
-                                                                <a href="cart.html" title="10. This is the large title for testing large title and there is an image for testing - white">10.
-                                                                    This is the large title for testing...</a>
-                                                            </h5>
+                                                            <h5 class="title"><a href="cart.html" title="10. This is the large title for testing large title and there is an image for testing - white">10.
+                                                                    This is the large title for testing...</a></h5>
                                                             <div class="cart-text-btn">
                                                                 <div class="cart-qty">
                                                                     <span>1×</span>
@@ -487,13 +405,11 @@
                                                     </div>
                                                     <div class="single-cart-item">
                                                         <div class="cart-img">
-                                                            <a href="cart.html"><img src="<?= ROOT_URL ?>/assets/images/cart/3.jpg" alt="" /></a>
+                                                            <a href="cart.html"><img src="assets/images/cart/3.jpg" alt=""></a>
                                                         </div>
                                                         <div class="cart-text">
-                                                            <h5 class="title">
-                                                                <a href="cart.html">1. New and sale badge product - s /
-                                                                    red</a>
-                                                            </h5>
+                                                            <h5 class="title"><a href="cart.html">1. New and sale badge
+                                                                    product - s / red</a></h5>
                                                             <div class="cart-text-btn">
                                                                 <div class="cart-qty">
                                                                     <span>1×</span>
@@ -538,7 +454,7 @@
                     <div class="off-canvas-inner">
                         <div class="search-box-offcanvas">
                             <form>
-                                <input type="text" placeholder="Search product..." />
+                                <input type="text" placeholder="Search product...">
                                 <button class="search-btn"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
@@ -547,8 +463,7 @@
                             <!-- mobile menu navigation start -->
                             <nav>
                                 <ul class="mobile-menu">
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Home</a>
+                                    <li class="menu-item-has-children"><a href="#">Home</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home Page 1</a></li>
                                             <li><a href="index-2.html">Home Page 2</a></li>
@@ -556,11 +471,9 @@
                                             <li><a href="index-4.html">Home Page 4</a></li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Shop</a>
+                                    <li class="menu-item-has-children"><a href="#">Shop</a>
                                         <ul class="megamenu dropdown">
-                                            <li class="mega-title has-children">
-                                                <a href="#">Shop Layouts</a>
+                                            <li class="mega-title has-children"><a href="#">Shop Layouts</a>
                                                 <ul class="dropdown">
                                                     <li><a href="shop.html">Shop Left Sidebar</a></li>
                                                     <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
@@ -569,30 +482,20 @@
                                                     <li><a href="shop-fullwidth.html">Shop Full Width</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="mega-title has-children">
-                                                <a href="#">Product Details</a>
+                                            <li class="mega-title has-children"><a href="#">Product Details</a>
                                                 <ul class="dropdown">
                                                     <li><a href="product-details.html">Single Product Details</a></li>
-                                                    <li>
-                                                        <a href="variable-product-details.html">Variable Product
-                                                            Details</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="external-product-details.html">External Product
-                                                            Details</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="gallery-product-details.html">Gallery Product
-                                                            Details</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="countdown-product-details.html">Countdown Product
-                                                            Details</a>
-                                                    </li>
+                                                    <li><a href="variable-product-details.html">Variable Product
+                                                            Details</a></li>
+                                                    <li><a href="external-product-details.html">External Product
+                                                            Details</a></li>
+                                                    <li><a href="gallery-product-details.html">Gallery Product
+                                                            Details</a></li>
+                                                    <li><a href="countdown-product-details.html">Countdown Product
+                                                            Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="mega-title has-children">
-                                                <a href="#">Others</a>
+                                            <li class="mega-title has-children"><a href="#">Others</a>
                                                 <ul class="dropdown">
                                                     <li><a href="error404.html">Error 404</a></li>
                                                     <li><a href="compare.html">Compare Page</a></li>
@@ -603,8 +506,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children ">
-                                        <a href="#">Blog</a>
+                                    <li class="menu-item-has-children "><a href="#">Blog</a>
                                         <ul class="dropdown">
                                             <li><a href="blog.html">Blog Left Sidebar</a></li>
                                             <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
@@ -613,13 +515,11 @@
                                             <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
                                             <li><a href="blog-grid-fullwidth.html">Blog Grid Fullwidth</a></li>
                                             <li><a href="blog-details-sidebar.html">Blog Details Sidebar Page</a></li>
-                                            <li>
-                                                <a href="blog-details-fullwidth.html">Blog Details Fullwidth Page</a>
+                                            <li><a href="blog-details-fullwidth.html">Blog Details Fullwidth Page</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children ">
-                                        <a href="#">Pages</a>
+                                    <li class="menu-item-has-children "><a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a href="frequently-questions.html">FAQ</a></li>
                                             <li><a href="my-account.html">My Account</a></li>
@@ -637,15 +537,13 @@
                             <!-- mobile menu navigation start -->
                             <nav>
                                 <ul class="mobile-menu">
-                                    <li class="menu-item-has-children">
-                                        <a href="#">My Account</a>
+                                    <li class="menu-item-has-children"><a href="#">My Account</a>
                                         <ul class="dropdown">
                                             <li><a href="login.html">Login</a></li>
                                             <li><a href="Register-2.html">Register</a></li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Currency:USD</a>
+                                    <li class="menu-item-has-children"><a href="#">Currency:USD</a>
                                         <ul class="dropdown">
                                             <li><a href="#">USD - US Dollar</a></li>
                                             <li><a href="#">EUR - Euro</a></li>
@@ -689,91 +587,334 @@
             </aside>
             <!-- off-canvas menu end -->
         </header>
-        <!-- Header Area End Here -->
-        <!-- Begin Slider Area One -->
-        <div class="slider-area">
-            <div class="obrien-slider arrow-style" data-slick-options='{
-        "slidesToShow": 1,
-        "slidesToScroll": 1,
-        "infinite": true,
-        "arrows": true,
-        "dots": true,
-        "autoplay" : true,
-        "fade" : true,
-        "autoplaySpeed" : 7000,
-        "pauseOnHover" : false,
-        "pauseOnFocus" : false
-        }' data-slick-responsive='[
-        {"breakpoint":992, "settings": {
-        "slidesToShow": 1,
-        "arrows": false,
-        "dots": true
-        }}
-        ]'>
-                <div class="slide-item slide-1 bg-position slide-bg-1 animation-style-01">
-                    <div class="slider-content">
-                        <h4 class="slider-small-title">Cold processed organic fruit</h4>
-                        <h2 class="slider-large-title">Fresh Avocado</h2>
-                        <div class="slider-btn">
-                            <a class="obrien-button black-btn" href="shop.html">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-item slide-2 bg-position slide-bg-1 animation-style-01">
-                    <div class="slider-content">
-                        <h4 class="slider-small-title">Healthy life with</h4>
-                        <h2 class="slider-large-title">Natural Organic</h2>
-                        <div class="slider-btn">
-                            <a class="obrien-button black-btn" href="shop.html">Shop Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Slider Area One End Here -->
-        <!-- Feature Area Start Here -->
-        <div class="feature-area">
-            <div class="container container-default custom-wrapper">
+        <!-- Breadcrumb Area Start Here -->
+        <div class="breadcrumbs-area position-relative">
+            <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-5 col-md-12 col-custom">
-                        <div class="feature-content-wrapper">
-                            <h2 class="title">Important to eat fruit</h2>
-                            <p class="desc-content">
-                                Eating fruit provides health benefits — people who eat more fruits and vegetables
-                                as part of an overall healthy diet are likely to have a reduced risk of some
-                                chronic diseases. Fruits provide nutrients vital for health and maintenance of
-                                your body.
-                            </p>
-                            <p class="desc-content">
-                                Fruits are sources of many essential nutrients that are underconsumed, including
-                                potassium, dietary fiber, vitamin C, and folate (folic acid).
-                            </p>
-                            <p class="desc-content">
-                                Most fruits are naturally low in fat, sodium, and calories. None have cholesterol.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-7 col-md-12 col-custom">
-                        <div class="feature-image">
-                            <img src="<?= ROOT_URL ?>/assets/images/feature/feature-1.jpg" alt="Obrien Feature" />
+                    <div class="col-12 text-center">
+                        <div class="breadcrumb-content position-relative section-content">
+                            <h3 class="title-3">Product Details</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>Product Details</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Feature Area End Here -->
+        <!-- Breadcrumb Area End Here -->
+        <!-- Single Product Main Area Start -->
+        <div class="single-product-main-area">
+            <div class="container container-default custom-area">
+                <div class="row">
+                    <div class="col-lg-5 col-custom">
+                        <div class="product-details-img horizontal-tab">
+                            <div class="product-slider popup-gallery product-details_slider" data-slick-options='{
+                        "slidesToShow": 1,
+                        "arrows": false,
+                        "fade": true,
+                        "draggable": false,
+                        "swipe": false,
+                        "asNavFor": ".pd-slider-nav"
+                        }'>
+                                <div class="single-image border">
+                                    <a href="<?= $detail[0]['image'] ?? '' ?>">
+                                        <img src="<?= $detail[0]['image'] ?? '' ?>" alt="Product">
+                                    </a>
+                                </div>
+                                <div class="single-image border">
+                                    <a href="<?= $detail[0]['image'] ?? '' ?>">
+                                        <img src="<?= $detail[0]['image'] ?? '' ?>" alt="Product">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pd-slider-nav product-slider" data-slick-options='{
+                        "slidesToShow": 4,
+                        "asNavFor": ".product-details_slider",
+                        "focusOnSelect": true,
+                        "arrows" : false,
+                        "spaceBetween": 30,
+                        "vertical" : false
+                        }' data-slick-responsive='[
+                            {"breakpoint":1501, "settings": {"slidesToShow": 4}},
+                            {"breakpoint":1200, "settings": {"slidesToShow": 4}},
+                            {"breakpoint":992, "settings": {"slidesToShow": 4}},
+                            {"breakpoint":575, "settings": {"slidesToShow": 3}}
+                        ]'>
+                                <div class="single-thumb border">
+                                    <img src="<?= $detail[0]['image'] ?? '' ?>" alt="Product Thumnail">
+                                </div>
+                                <div class="single-thumb border">
+                                    <img src="<?= $detail[0]['image'] ?? '' ?>" alt="Product Thumnail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-custom">
+                        <div class="product-summery position-relative">
+                            <div class="product-head mb-3">
+                                <h2 class="product-title"><?= $detail[0]['name'] ?? '' ?></h2>
+                            </div>
+                            <div class="price-box mb-2">
+                                <span class="regular-price">$<?= $detail[0]['price'] ?? '' ?></span>
+                                <span class="old-price"><del>$<?= $detail[0]['price'] ?? '' ?></del></span>
+                            </div>
+                            <div class="product-rating mb-3">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="sku mb-3">
+                                <span>SKU: 12345</span>
+                            </div>
+                            <p class="desc-content mb-5">I must explain to you how all this mistaken idea of denouncing
+                                pleasure and praising pain was born and I will give you a complete account of the
+                                system, and expound the actual teachings of the great explorer of the truth, the
+                                master-builder of human happiness.</p>
+                            <div class="quantity-with_btn mb-4">
+                                <div class="quantity">
+                                    <div class="cart-plus-minus">
+                                        <input class="cart-plus-minus-box" value="0" type="text">
+                                        <div class="dec qtybutton">-</div>
+                                        <div class="inc qtybutton">+</div>
+                                    </div>
+                                </div>
+                                <div class="add-to_cart">
+                                    <a class="btn obrien-button primary-btn" href="cart.html">Add to cart</a>
+                                    <a class="btn obrien-button-2 treansparent-color pt-0 pb-0" href="wishlist.html">Add
+                                        to wishlist</a>
+                                </div>
+                            </div>
+                            <div class="buy-button mb-5">
+                                <a href="#" class="btn obrien-button-3 black-button">Buy it now</a>
+                            </div>
+                            <div class="social-share mb-4">
+                                <span>Share :</span>
+                                <a href="#"><i class="fa fa-facebook-square facebook-color"></i></a>
+                                <a href="#"><i class="fa fa-twitter-square twitter-color"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square linkedin-color"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-square pinterest-color"></i></a>
+                            </div>
+                            <div class="payment">
+                                <a href="#"><img class="border" src="assets/images/payment/img-payment.png" alt="Payment"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-no-text">
+                    <div class="col-lg-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active text-uppercase" id="home-tab" data-bs-toggle="tab" href="#connect-1" role="tab" aria-selected="true">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" href="#connect-2" role="tab" aria-selected="false">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab" href="#connect-3" role="tab" aria-selected="false">Shipping Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="review-tab" data-bs-toggle="tab" href="#connect-4" role="tab" aria-selected="false">Size Chart</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mb-text" id="myTabContent">
+                            <div class="tab-pane fade show active" id="connect-1" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="desc-content">
+                                    <p class="mb-3">On the other hand, we denounce with righteous indignation and
+                                        dislike men who are so beguiled and demoralized by the charms of pleasure of the
+                                        moment, so blinded by desire, that they cannot foresee the pain and trouble that
+                                        are bound to ensue; and equal blame belongs to those who fail in their duty
+                                        through weakness of will, which is the same as saying through shrinking from
+                                        toil and pain. These cases are perfectly simple and easy to distinguish. In a
+                                        free hour, when our power of choice is untrammelled and when nothing prevents
+                                        our being able to do what we like best, every pleasure is to be welcomed and
+                                        every pain avoided. But in certain circumstances and owing to the claims of duty
+                                        or the obligations of business it will frequently occur that pleasures have to
+                                        be repudiated and annoyances accepted. The wise man therefore always holds in
+                                        these matters to this principle of selection: he rejects pleasures to secure
+                                        other greater pleasures, or else he endures pains to avoid worse pains.</p>
+                                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                        soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                                        placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                                        saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+                                        repellat.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="connect-2" role="tabpanel" aria-labelledby="profile-tab">
+                                <!-- Start Single Content -->
+                                <div class="product_tab_content  border p-3">
+                                    <div class="review_address_inner">
+                                        <!-- Start Single Review -->
+                                        <div class="pro_review mb-5">
+                                            <div class="review_thumb">
+                                                <img alt="review images" src="assets/images/review/1.jpg">
+                                            </div>
+                                            <div class="review_details">
+                                                <div class="review_info mb-2">
+                                                    <div class="product-rating mb-2">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <h5>Admin - <span> December 19, 2020</span></h5>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+                                                    viverra ex, vitae vestibulum arcu. Duis sollicitudin metus sed lorem
+                                                    commodo, eu dapibus libero interdum. Morbi convallis viverra erat,
+                                                    et aliquet orci congue vel. Integer in odio enim. Pellentesque in
+                                                    dignissim leo. Vivamus varius ex sit amet quam tincidunt iaculis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- End Single Review -->
+                                    </div>
+                                    <!-- Start RAting Area -->
+                                    <div class="rating_wrap">
+                                        <h5 class="rating-title-1 mb-2">Add a review </h5>
+                                        <p class="mb-2">Your email address will not be published. Required fields are
+                                            marked *</p>
+                                        <h6 class="rating-title-2 mb-2">Your Rating</h6>
+                                        <div class="rating_list mb-4">
+                                            <div class="review_info">
+                                                <div class="product-rating mb-3">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End RAting Area -->
+                                    <div class="comments-area comments-reply-area">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-custom">
+                                                <form action="#" class="comment-form-area">
+                                                    <div class="row comment-input">
+                                                        <div class="col-md-6 col-custom comment-form-author mb-3">
+                                                            <label>Name <span class="required">*</span></label>
+                                                            <input type="text" required="required" name="Name">
+                                                        </div>
+                                                        <div class="col-md-6 col-custom comment-form-emai mb-3">
+                                                            <label>Email <span class="required">*</span></label>
+                                                            <input type="text" required="required" name="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment-form-comment mb-3">
+                                                        <label>Comment</label>
+                                                        <textarea class="comment-notes" required="required"></textarea>
+                                                    </div>
+                                                    <div class="comment-form-submit">
+                                                        <input type="submit" value="Submit" class="comment-submit btn obrien-button primary-btn">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Content -->
+                            </div>
+                            <div class="tab-pane fade" id="connect-3" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="shipping-policy">
+                                    <h4 class="title-3 mb-4">Shipping policy for our store</h4>
+                                    <p class="desc-content mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                        elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                        erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                                        autem vel eum iriure dolor in hendrerit in vulputate</p>
+                                    <ul class="policy-list mb-2">
+                                        <li>1-2 business days (Typically by end of day)</li>
+                                        <li><a href="#">30 days money back guaranty</a></li>
+                                        <li>24/7 live support</li>
+                                        <li>odio dignissim qui blandit praesent</li>
+                                        <li>luptatum zzril delenit augue duis dolore</li>
+                                        <li>te feugait nulla facilisi.</li>
+                                    </ul>
+                                    <p class="desc-content mb-2">Nam liber tempor cum soluta nobis eleifend option
+                                        congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi
+                                        non habent claritatem insitam; est usus legentis in iis qui facit eorum</p>
+                                    <p class="desc-content mb-2">claritatem. Investigationes demonstraverunt lectores
+                                        legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+                                        qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera
+                                        gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
+                                        humanitatis per</p>
+                                    <p class="desc-content mb-2">seacula quarta decima et quinta decima. Eodem modo
+                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="connect-4" role="tabpanel" aria-labelledby="review-tab">
+                                <div class="size-tab table-responsive-lg">
+                                    <h4 class="title-3 mb-4">Size Chart</h4>
+                                    <table class="table border">
+                                        <tbody>
+                                            <tr>
+                                                <td class="cun-name"><span>UK</span></td>
+                                                <td>18</td>
+                                                <td>20</td>
+                                                <td>22</td>
+                                                <td>24</td>
+                                                <td>26</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cun-name"><span>European</span></td>
+                                                <td>46</td>
+                                                <td>48</td>
+                                                <td>50</td>
+                                                <td>52</td>
+                                                <td>54</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cun-name"><span>usa</span></td>
+                                                <td>14</td>
+                                                <td>16</td>
+                                                <td>18</td>
+                                                <td>20</td>
+                                                <td>22</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cun-name"><span>Australia</span></td>
+                                                <td>28</td>
+                                                <td>10</td>
+                                                <td>12</td>
+                                                <td>14</td>
+                                                <td>16</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cun-name"><span>Canada</span></td>
+                                                <td>24</td>
+                                                <td>18</td>
+                                                <td>14</td>
+                                                <td>42</td>
+                                                <td>36</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Product Main Area End -->
         <!-- Product Area Start Here -->
-        <div class="product-area">
+        <div class="product-area mb-text">
             <div class="container container-default custom-area">
                 <div class="row">
                     <div class="col-lg-5 m-auto text-center col-custom">
                         <div class="section-content">
-                            <h2 class="title-1 text-uppercase">Best Sale</h2>
+                            <h2 class="title-1 text-uppercase">Related Product</h2>
                             <div class="desc-content">
-                                <p>
-                                    All best seller product are now available for you and your can buy this product
-                                    from here any time any where so sop now
-                                </p>
+                                <p>You can check the related product for your shopping collection.</p>
                             </div>
                         </div>
                     </div>
@@ -801,8 +942,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="assets/images/product/1.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100">
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -814,8 +955,7 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy name</a>
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy name</a>
                                             </h4>
                                         </div>
                                         <div class="price-box">
@@ -843,8 +983,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="assets/images/product/3.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100">
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -856,8 +996,7 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy title</a>
                                             </h4>
                                         </div>
                                         <div class="price-box">
@@ -885,8 +1024,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="assets/images/product/5.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100">
                                         </a>
                                     </div>
                                     <div class="label-product">
@@ -901,8 +1040,7 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy title</a>
                                             </h4>
                                         </div>
                                         <div class="price-box">
@@ -930,8 +1068,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/7.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100" />
+                                            <img src="assets/images/product/7.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100">
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -943,8 +1081,7 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy name</a>
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy name</a>
                                             </h4>
                                         </div>
                                         <div class="price-box">
@@ -972,8 +1109,8 @@
                                 <div class="single-product position-relative">
                                     <div class="product-image">
                                         <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/9.jpg" alt="" class="product-image-1" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
+                                            <img src="assets/images/product/9.jpg" alt="" class="product-image-1">
+                                            <img src="assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0">
                                         </a>
                                     </div>
                                     <div class="product-content">
@@ -985,8 +1122,7 @@
                                             <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy title</a>
                                             </h4>
                                         </div>
                                         <div class="price-box">
@@ -1016,680 +1152,244 @@
             </div>
         </div>
         <!-- Product Area End Here -->
-        <!-- Banner Fullwidth Area Start Here -->
-        <div class="banner-fullwidth-area">
-            <div class="container custom-wrapper">
-                <div class="row">
-                    <div class="col-md-5 col-lg-6 text-center col-custom">
-                        <div class="banner-thumb h-100 d-flex justify-content-center align-items-center">
-                            <img src="<?= ROOT_URL ?>/assets/images/banner/thumb/1.png" alt="Banner Thumb" />
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-lg-6 text-center justify-content-center col-custom">
-                        <div class="banner-flash-content d-flex flex-column align-items-center justify-content-center h-100">
-                            <h2 class="deal-head text-uppercase">Flash Deals</h2>
-                            <h3 class="deal-title text-uppercase">Hurry up and Get 25% Discount</h3>
-                            <a href="shop.html" class="obrien-button primary-btn">Shop Now</a>
-                            <div class="countdown-wrapper d-flex justify-content-center" data-countdown="2022/12/24">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Banner Fullwidth Area End Here -->
-        <!-- Banner Area Start Here -->
-        <div class="banner-area">
-            <div class="container container-default custom-area">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-custom">
-                        <div class="banner-image hover-style">
-                            <a class="d-block" href="shop.html">
-                                <img class="w-100" src="<?= ROOT_URL ?>/assets/images/banner/small-banner/1-1.png" alt="Banner Image" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-custom">
-                        <div class="banner-image hover-style">
-                            <a class="d-block" href="shop.html">
-                                <img class="w-100" src="<?= ROOT_URL ?>/assets/images/banner/small-banner/1-2.png" alt="Banner Image" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-custom">
-                        <div class="banner-image hover-style mb-0">
-                            <a class="d-block" href="shop.html">
-                                <img class="w-100" src="<?= ROOT_URL ?>/assets/images/banner/small-banner/1-3.png" alt="Banner Image" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Banner Area End Here -->
         <!-- Product Area Start Here -->
-        <div class="product-area">
+        <div class="product-area mb-no-text">
             <div class="container container-default custom-area">
                 <div class="row">
                     <div class="col-lg-5 m-auto text-center col-custom">
                         <div class="section-content">
-                            <h2 class="title-1 text-uppercase">Featured Products</h2>
+                            <h2 class="title-1 text-uppercase">You May Also Like</h2>
                             <div class="desc-content">
-                                <p>
-                                    All best seller product are now available for you and your can buy this product
-                                    from here any time any where so sop now
-                                </p>
+                                <p>Most of the customers choose our products. You may also like our product.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="product-wrapper col-lg-12 col-custom">
+                    <div class="col-lg-12 product-wrapper col-custom">
                         <div class="product-slider" data-slick-options='{
-                    "slidesToShow": 4,
-                    "slidesToScroll": 1,
-                    "infinite": true,
-                    "arrows": false,
-                    "dots": false
-                    }' data-slick-responsive='[
-                    {"breakpoint": 1200, "settings": {
-                    "slidesToShow": 3
-                    }},
-                    {"breakpoint": 992, "settings": {
-                    "slidesToShow": 2
-                    }},
-                    {"breakpoint": 576, "settings": {
-                    "slidesToShow": 1
-                    }}
-                    ]'>
-                            <div class="single-item">
-                                <div class="single-product position-relative mb-30">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy name</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-product position-relative">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/10.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy name</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="single-product position-relative mb-30">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-product position-relative">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/7.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="single-product position-relative mb-30">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/5.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="label-product">
-                                        <span class="label-sale position-absolute text-uppercase text-white text-center d-block">Soldout</span>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-product position-relative">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/6.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="label-product">
-                                        <span class="label-sale position-absolute text-uppercase text-white text-center d-block">Soldout</span>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="single-product position-relative mb-30">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/7.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy name</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-product position-relative">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="" class="product-image-1 w-100" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/3.jpg" alt="" class="product-image-2 position-absolute w-100" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy name</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="single-product position-relative mb-30">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/9.jpg" alt="" class="product-image-1" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="single-product position-relative">
-                                    <div class="product-image">
-                                        <a class="d-block" href="product-details.html">
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/4.jpg" alt="" class="product-image-1" />
-                                            <img src="<?= ROOT_URL ?>/assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute top-0 left-0" />
-                                        </a>
-                                    </div>
-                                    <div class="product-content">
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-title">
-                                            <h4 class="title-2">
-                                                <a href="product-details.html">Product dummy title</a>
-                                            </h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                    </div>
-                                    <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
-                                            <i class="ion-bag"></i>
-                                        </a>
-                                        <a href="compare.html" title="Compare">
-                                            <i class="ion-ios-loop-strong"></i>
-                                        </a>
-                                        <a href="wishlist.html" title="Add To Wishlist">
-                                            <i class="ion-ios-heart-outline"></i>
-                                        </a>
-                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
-                                            <i class="ion-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Product Area End Here -->
-        <!-- Newslatter Area Start Here -->
-        <div class="newsletter-area">
-            <div class="container container-default h-100 custom-area">
-                <div class="row h-100">
-                    <div class="col-lg-8 col-xl-5 offset-xl-6 offset-lg-3 col-custom">
-                        <div class="newsletter-content text-center d-flex flex-column align-items-center justify-content-center h-100">
-                            <div class="section-content">
-                                <h4 class="title-4 text-uppercase">
-                                    Special <span>Offer</span> for subscription
-                                </h4>
-                                <h2 class="title-3 text-uppercase">Get instant discount for membership</h2>
-                                <p class="desc-content">
-                                    Subscribe our newsletter and all latest news of our <br />latest product,
-                                    promotion and offers
-                                </p>
-                            </div>
-                            <div class="newsletter-form-wrap ml-auto mr-auto">
-                                <form id="mc-form" class="mc-form d-flex position-relative">
-                                    <input type="email" id="mc-email" class="form-control email-box" placeholder="email@example.com" name="EMAIL" />
-                                    <button id="mc-submit" class="btn primary-btn obrien-button newsletter-btn position-absolute" type="submit">
-                                        Subscribe
-                                    </button>
-                                </form>
-                                <!-- mailchimp-alerts Start -->
-                                <div class="mailchimp-alerts text-centre">
-                                    <div class="mailchimp-submitting"></div>
-                                    <!-- mailchimp-submitting end -->
-                                    <div class="mailchimp-success text-success"></div>
-                                    <!-- mailchimp-success end -->
-                                    <div class="mailchimp-error text-danger"></div>
-                                    <!-- mailchimp-error end -->
-                                </div>
-                                <!-- mailchimp-alerts end -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newslatter Area End Here -->
-        <!-- Latest Blog Area Start Here -->
-        <div class="latest-blog-area">
-            <div class="container container-default custom-area">
-                <div class="row">
-                    <div class="col-lg-5 m-auto text-center col-custom">
-                        <div class="section-content">
-                            <h2 class="title-1 text-uppercase">Latest Blog</h2>
-                            <div class="desc-content">
-                                <p>If you want to know about the organic product then keep an eye on our blog.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-custom">
-                        <div class="obrien-slider" data-slick-options='{
-                        "slidesToShow": 3,
+                        "slidesToShow": 4,
                         "slidesToScroll": 1,
                         "infinite": true,
                         "arrows": false,
                         "dots": false
                         }' data-slick-responsive='[
                         {"breakpoint": 1200, "settings": {
-                        "slidesToShow": 2
+                        "slidesToShow": 3
                         }},
                         {"breakpoint": 992, "settings": {
                         "slidesToShow": 2
-                        }},
-                        {"breakpoint": 768, "settings": {
-                        "slidesToShow": 1
                         }},
                         {"breakpoint": 576, "settings": {
                         "slidesToShow": 1
                         }}
                         ]'>
-                            <div class="single-blog">
-                                <div class="single-blog-thumb">
-                                    <a href="blog.html">
-                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/1.jpg" alt="Blog Image" />
-                                    </a>
-                                </div>
-                                <div class="single-blog-content position-relative">
-                                    <div class="post-date text-center border rounded d-flex flex-column position-absolute">
-                                        <span>14</span>
-                                        <span>01</span>
+                            <div class="single-item">
+                                <div class="single-product position-relative">
+                                    <div class="product-image">
+                                        <a class="d-block" href="product-details.html">
+                                            <img src="assets/images/product/1.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/2.jpg" alt="" class="product-image-2 position-absolute w-100">
+                                        </a>
                                     </div>
-                                    <div class="post-meta">
-                                        <span class="author">Author: Obrien Demo Admin</span>
+                                    <div class="product-content">
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-title">
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy name</a>
+                                            </h4>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="regular-price ">$80.00</span>
+                                            <span class="old-price"><del>$90.00</del></span>
+                                        </div>
                                     </div>
-                                    <h2 class="post-title">
-                                        <a href="blog.html">There Are Many Variation of Passages of Lorem Ipsum
-                                            Available</a>
-                                    </h2>
-                                    <p class="desc-content">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                        roots in a piece of classical Latin literature from 45 BC, making...
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="single-blog">
-                                <div class="single-blog-thumb">
-                                    <a href="blog.html">
-                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/2.jpg" alt="Blog Image" />
-                                    </a>
-                                </div>
-                                <div class="single-blog-content position-relative">
-                                    <div class="post-date text-center border rounded d-flex flex-column position-absolute">
-                                        <span>14</span>
-                                        <span>01</span>
+                                    <div class="add-action d-flex position-absolute">
+                                        <a href="cart.html" title="Add To cart">
+                                            <i class="ion-bag"></i>
+                                        </a>
+                                        <a href="compare.html" title="Compare">
+                                            <i class="ion-ios-loop-strong"></i>
+                                        </a>
+                                        <a href="wishlist.html" title="Add To Wishlist">
+                                            <i class="ion-ios-heart-outline"></i>
+                                        </a>
+                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
+                                            <i class="ion-eye"></i>
+                                        </a>
                                     </div>
-                                    <div class="post-meta">
-                                        <span class="author">Author: Obrien Demo Admin</span>
-                                    </div>
-                                    <h2 class="post-title">
-                                        <a href="blog.html">There Are Many Variation of Passages of Lorem Ipsum
-                                            Available</a>
-                                    </h2>
-                                    <p class="desc-content">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                        roots in a piece of classical Latin literature from 45 BC, making...
-                                    </p>
                                 </div>
                             </div>
-                            <div class="single-blog">
-                                <div class="single-blog-thumb">
-                                    <a href="blog.html">
-                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/3.jpg" alt="Blog Image" />
-                                    </a>
-                                </div>
-                                <div class="single-blog-content position-relative">
-                                    <div class="post-date text-center border rounded d-flex flex-column position-absolute">
-                                        <span>14</span>
-                                        <span>01</span>
+                            <div class="single-item">
+                                <div class="single-product position-relative">
+                                    <div class="product-image">
+                                        <a class="d-block" href="product-details.html">
+                                            <img src="assets/images/product/3.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/4.jpg" alt="" class="product-image-2 position-absolute w-100">
+                                        </a>
                                     </div>
-                                    <div class="post-meta">
-                                        <span class="author">Author: Obrien Demo Admin</span>
+                                    <div class="product-content">
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-title">
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy title</a>
+                                            </h4>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="regular-price ">$80.00</span>
+                                            <span class="old-price"><del>$90.00</del></span>
+                                        </div>
                                     </div>
-                                    <h2 class="post-title">
-                                        <a href="blog.html">The Standard Chunk Of Lorem Ipsum Used Since</a>
-                                    </h2>
-                                    <p class="desc-content">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                        roots in a piece of classical Latin literature from 45 BC, making...
-                                    </p>
+                                    <div class="add-action d-flex position-absolute">
+                                        <a href="cart.html" title="Add To cart">
+                                            <i class="ion-bag"></i>
+                                        </a>
+                                        <a href="compare.html" title="Compare">
+                                            <i class="ion-ios-loop-strong"></i>
+                                        </a>
+                                        <a href="wishlist.html" title="Add To Wishlist">
+                                            <i class="ion-ios-heart-outline"></i>
+                                        </a>
+                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
+                                            <i class="ion-eye"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="single-blog">
-                                <div class="single-blog-thumb">
-                                    <a href="blog.html">
-                                        <img src="<?= ROOT_URL ?>/assets/images/blog/medium-size/4.jpg" alt="Blog Image" />
-                                    </a>
+                            <div class="single-item">
+                                <div class="single-product position-relative">
+                                    <div class="product-image">
+                                        <a class="d-block" href="product-details.html">
+                                            <img src="assets/images/product/5.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/6.jpg" alt="" class="product-image-2 position-absolute w-100">
+                                        </a>
+                                    </div>
+                                    <div class="label-product">
+                                        <span class="label-sale position-absolute text-uppercase text-white text-center d-block">Soldout</span>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-title">
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy title</a>
+                                            </h4>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="regular-price ">$80.00</span>
+                                            <span class="old-price"><del>$90.00</del></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-action d-flex position-absolute">
+                                        <a href="cart.html" title="Add To cart">
+                                            <i class="ion-bag"></i>
+                                        </a>
+                                        <a href="compare.html" title="Compare">
+                                            <i class="ion-ios-loop-strong"></i>
+                                        </a>
+                                        <a href="wishlist.html" title="Add To Wishlist">
+                                            <i class="ion-ios-heart-outline"></i>
+                                        </a>
+                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
+                                            <i class="ion-eye"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="single-blog-content position-relative">
-                                    <div class="post-date text-center border rounded d-flex flex-column position-absolute">
-                                        <span>14</span>
-                                        <span>01</span>
+                            </div>
+                            <div class="single-item">
+                                <div class="single-product position-relative">
+                                    <div class="product-image">
+                                        <a class="d-block" href="product-details.html">
+                                            <img src="assets/images/product/7.jpg" alt="" class="product-image-1 w-100">
+                                            <img src="assets/images/product/8.jpg" alt="" class="product-image-2 position-absolute w-100">
+                                        </a>
                                     </div>
-                                    <div class="post-meta">
-                                        <span class="author">Author: Obrien Demo Admin</span>
+                                    <div class="product-content">
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-title">
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy name</a>
+                                            </h4>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="regular-price ">$80.00</span>
+                                            <span class="old-price"><del>$90.00</del></span>
+                                        </div>
                                     </div>
-                                    <h2 class="post-title">
-                                        <a href="blog.html">There Are Many Variation of Passages of Lorem Ipsum
-                                            Available</a>
-                                    </h2>
-                                    <p class="desc-content">
-                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                        roots in a piece of classical Latin literature from 45 BC, making...
-                                    </p>
+                                    <div class="add-action d-flex position-absolute">
+                                        <a href="cart.html" title="Add To cart">
+                                            <i class="ion-bag"></i>
+                                        </a>
+                                        <a href="compare.html" title="Compare">
+                                            <i class="ion-ios-loop-strong"></i>
+                                        </a>
+                                        <a href="wishlist.html" title="Add To Wishlist">
+                                            <i class="ion-ios-heart-outline"></i>
+                                        </a>
+                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
+                                            <i class="ion-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-item">
+                                <div class="single-product position-relative">
+                                    <div class="product-image">
+                                        <a class="d-block" href="product-details.html">
+                                            <img src="assets/images/product/9.jpg" alt="" class="product-image-1">
+                                            <img src="assets/images/product/10.jpg" alt="" class="product-image-2 position-absolute top-0 left-0">
+                                        </a>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-title">
+                                            <h4 class="title-2"> <a href="product-details.html">Product dummy title</a>
+                                            </h4>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="regular-price ">$80.00</span>
+                                            <span class="old-price"><del>$90.00</del></span>
+                                        </div>
+                                    </div>
+                                    <div class="add-action d-flex position-absolute">
+                                        <a href="cart.html" title="Add To cart">
+                                            <i class="ion-bag"></i>
+                                        </a>
+                                        <a href="compare.html" title="Compare">
+                                            <i class="ion-ios-loop-strong"></i>
+                                        </a>
+                                        <a href="wishlist.html" title="Add To Wishlist">
+                                            <i class="ion-ios-heart-outline"></i>
+                                        </a>
+                                        <a href="#exampleModalCenter" data-bs-toggle="modal" title="Quick View">
+                                            <i class="ion-eye"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1697,7 +1397,7 @@
                 </div>
             </div>
         </div>
-        <!-- Latest Blog Area End Here -->
+        <!-- Product Area End Here -->
         <!-- Support Area Start Here -->
         <div class="support-area">
             <div class="container container-default custom-area">
@@ -1726,13 +1426,11 @@
                             <div class="single-footer-widget m-0">
                                 <div class="footer-logo">
                                     <a href="index.html">
-                                        <img src="<?= ROOT_URL ?>/assets/images/logo/footer.png" alt="Logo Image" />
+                                        <img src="assets/images/logo/footer.png" alt="Logo Image">
                                     </a>
                                 </div>
-                                <p class="desc-content">
-                                    Obrien is the best parts shop of your daily nutritions. What kind of nutrition
-                                    do you need you can get here soluta nobis
-                                </p>
+                                <p class="desc-content">Obrien is the best parts shop of your daily nutritions. What
+                                    kind of nutrition do you need you can get here soluta nobis</p>
                                 <div class="social-links">
                                     <ul class="d-flex">
                                         <li>
@@ -1804,10 +1502,8 @@
                             <div class="single-footer-widget">
                                 <h2 class="widget-title">See Information</h2>
                                 <div class="widget-body">
-                                    <address>
-                                        123, H2, Road #21, Main City, Your address goes here.<br />Phone: 01254 698
-                                        785, 36598 254 987<br />Email: https://example.com
-                                    </address>
+                                    <address>123, H2, Road #21, Main City, Your address goes here.<br>Phone: 01254 698
+                                        785, 36598 254 987<br>Email: https://example.com</address>
                                 </div>
                             </div>
                         </div>
@@ -1819,12 +1515,8 @@
                     <div class="row">
                         <div class="col-12 text-center col-custom">
                             <div class="copyright-content">
-                                <p>
-                                    Copyright © 2020
-                                    <a href="https://hasthemes.com/" title="https://hasthemes.com/">HasThemes</a> |
-                                    Built with&nbsp;<strong>Obrien</strong>&nbsp;by
-                                    <a href="https://hasthemes.com/" title="https://hasthemes.com/">HasThemes</a>.
-                                </p>
+                                <p>Copyright © 2020 <a href="https://hasthemes.com/" title="https://hasthemes.com/">HasThemes</a> | Built
+                                    with&nbsp;<strong>Obrien</strong>&nbsp;by <a href="https://hasthemes.com/" title="https://hasthemes.com/">HasThemes</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -1834,114 +1526,10 @@
         <!-- Footer Area End Here -->
     </div>
 
-    <!-- Modal Area Start Here -->
-    <div class="modal fade obrien-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close close-button" data-bs-dismiss="modal" aria-label="Close">
-                    <span class="close-icon" aria-hidden="true">x</span>
-                </button>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 text-center">
-                                <div class="product-image">
-                                    <img src="<?= ROOT_URL ?>/assets/images/product/1.jpg" alt="Product Image" />
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="modal-product">
-                                    <div class="product-content">
-                                        <div class="product-title">
-                                            <h4 class="title">Product dummy name</h4>
-                                        </div>
-                                        <div class="price-box">
-                                            <span class="regular-price ">$80.00</span>
-                                            <span class="old-price"><del>$90.00</del></span>
-                                        </div>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <span>1 Review</span>
-                                        </div>
-                                        <p class="desc-content">
-                                            we denounce with righteous indignation and dislike men who are so beguiled
-                                            and demoralized by the charms of pleasure of the moment, so blinded by
-                                            desire, that they cannot foresee the pain and trouble that are bound to
-                                            ensue; and equal blame bel...
-                                        </p>
-                                        <form class="d-flex flex-column w-100" action="#">
-                                            <div class="form-group">
-                                                <select class="form-control nice-select w-100">
-                                                    <option>S</option>
-                                                    <option>M</option>
-                                                    <option>L</option>
-                                                    <option>XL</option>
-                                                    <option>XXL</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                        <div class="quantity-with_btn">
-                                            <div class="quantity">
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" value="0" type="text" />
-                                                    <div class="dec qtybutton">-</div>
-                                                    <div class="inc qtybutton">+</div>
-                                                </div>
-                                            </div>
-                                            <div class="add-to_cart">
-                                                <a class="btn obrien-button primary-btn" href="cart.html">Add to
-                                                    cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Area End Here -->
 
-    <!-- Scroll to Top Start -->
-    <a class="scroll-to-top" href="#">
-        <i class="ion-chevron-up"></i>
-    </a>
-    <!-- Scroll to Top End -->
-
-    <!-- JS
-============================================ -->
-
-    <!-- jQuery JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- jQuery Migrate JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <!-- Modernizer JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <!-- Slick Slider JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/plugins/slick.min.js"></script>
-    <!-- Countdown JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.countdown.min.js"></script>
-    <!-- Ajax JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.ajaxchimp.min.js"></script>
-    <!-- Jquery Nice Select JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.nice-select.min.js"></script>
-    <!-- Jquery Ui JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery-ui.min.js"></script>
-    <!-- jquery magnific popup js -->
-    <script src="<?= ROOT_URL ?>/assets/js/plugins/jquery.magnific-popup.min.js"></script>
-
-    <!-- Main JS -->
-    <script src="<?= ROOT_URL ?>/assets/js/main.js"></script>
 </body>
 
-<!-- Mirrored from template.hasthemes.com/obrien/obrien/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 02:17:55 GMT -->
+
+<!-- Mirrored from template.hasthemes.com/obrien/obrien/product-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 02:18:08 GMT -->
 
 </html>

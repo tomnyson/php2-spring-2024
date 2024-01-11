@@ -29,6 +29,7 @@ class DatabaseHelper
     {
         $sql = "SELECT * FROM $table";
 
+        // kiểm tra xem có điều kiện hay không
         if (!empty($conditions)) {
             $placeholders = [];
             foreach ($conditions as $key => $value) {
