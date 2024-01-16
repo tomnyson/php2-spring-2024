@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 define('BASE_PATH', realpath(dirname(__FILE__) . '/..'));
 require_once '../app/autoloader.php';
 require_once BASE_PATH . '/app/database.php';
@@ -36,7 +36,9 @@ $router = new Router();
 $router->addRoute('home/index', ['HomeController', 'index']);
 $router->addRoute('user/index', ['UserController', 'index']);
 $router->addRoute('crawl/index', ['CrawlController', 'index']);
-
+// user router
+$router->addRoute('user/register', ['UserController', 'register']);
+$router->addRoute('user/save', ['UserController', 'save']);
 // Dynamic routes
 $router->addRoute('product/{id}', ['ProductController', 'show']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);

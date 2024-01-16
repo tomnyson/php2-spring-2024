@@ -6,6 +6,7 @@
 
 <body>
     <div class="home-wrapper home-1">
+        <?php require_once BASE_PATH . '/app/views/includes/menu.php'; ?>
         <!-- Header Area Start Here -->
         <?php
         echo $content;
