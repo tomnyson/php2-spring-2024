@@ -44,6 +44,8 @@ $router->addRoute('user/index', ['UserController', 'index']);
 $router->addRoute('crawl/index', ['CrawlController', 'index']);
 // user router
 $router->addRoute('user/register', ['UserController', 'register']);
+$router->addRoute('user/login', ['UserController', 'login']);
+$router->addRoute('user/checklogin', ['UserController', 'checklogin']);
 $router->addRoute('user/save', ['UserController', 'save']);
 // Dynamic routes
 $router->addRoute('product/{id}', ['ProductController', 'show']);

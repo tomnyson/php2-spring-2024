@@ -4,6 +4,7 @@ namespace Controllers;
 
 use Models\UserModel as UserModel;
 use Models\ProductModel;
+use Helper\Helper;
 
 class UserController
 {
@@ -18,6 +19,8 @@ class UserController
 
     public function register()
     {
+
+
         ob_start();
         $productModel = new ProductModel();
         $product_bestseller = $productModel->getListProductLimit(8);
@@ -25,6 +28,53 @@ class UserController
         $title = "Home";
         $content = ob_get_clean();
         require_once BASE_PATH . '/app/views/masterLayout.php';
+    }
+    public function login()
+    {
+
+
+        ob_start();
+        $productModel = new ProductModel();
+        $product_bestseller = $productModel->getListProductLimit(8);
+        require_once BASE_PATH . '/app/views/users/login.php';
+        $title = "LOGIN";
+        $content = ob_get_clean();
+        require_once BASE_PATH . '/app/views/masterLayout.php';
+    }
+    public function checklogin()
+    {
+        var_dump("demo here");
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (count($this->validate($_POST)) > 0) {
+
+                $errors = $this->validate($_POST);
+                var_dump($errors);
+                die;
+                // $_SESSION['message'] = $errors;
+                // header('Location:' . ROOT_URL . '/user/login');
+                // exit();
+            } else {
+                // check email khong ton tai
+                $userModel = new UserModel();
+                $user = $userModel->getUserByEmail($_POST['email']);
+                $user = $userModel->login($_POST['email'], $_POST['password']);
+                if (!empty($user)) {
+
+                    $verify = password_verify($_POST['password'], $user[0]['password']);
+                    if ($verify) {
+                        $_SESSION['auth'] = 1;
+                        $_SESSION['user'] = $user[0]['id'];
+                        header('Location:' . ROOT_URL . '/home/index');
+                    } else {
+                        $_SESSION['message'] = array('error' => 'Sai mat khau');
+                    }
+                } else {
+                    $_SESSION['message'] = array('error' => 'email is exist');
+                    header('Location:' . ROOT_URL . '/user/login');
+                }
+            }
+        }
+        // require_once BASE_PATH . '/app/views/users/create.php';
     }
 
     public function detail()
@@ -35,11 +85,8 @@ class UserController
     public function validate($data)
     {
         $errors = [];
-        if (isset($data['last_name']) && empty($data['last_name'])) {
-            $errors['last_name'] = 'last_name not empty';
-        }
-        if (isset($data['first_name']) && empty($data['first_name'])) {
-            $errors['first_name'] = 'first_name not empty';
+        if (isset($data['name']) && empty($data['name'])) {
+            $errors['first_name'] = 'name not empty';
         }
         if (isset($data['password'])) {
             if (empty($data['password'])) {
@@ -59,8 +106,32 @@ class UserController
         }
         return $errors;
     }
+    public function validateLogin($data)
+    {
+        $errors = [];
+        if (isset($data['password'])) {
+            if (empty($data['password'])) {
+                $errors['password'] = 'password not empty';
+            }
+            if (strlen($data['password']) < 6) {
+                $errors['password'] = 'password must be at least 6 characters';
+            }
+        }
+        if (isset($data['email'])) {
+            if (empty($data['email'])) {
+                $errors['email'] = 'email not empty';
+            }
+            if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+                $errors['email'] = "Invalid email format";
+            }
+        }
+        return $errors;
+    }
+
+
     public function create()
     {
+
         echo "create";
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST['name']) && isset($_POST['email'])) {
@@ -80,7 +151,30 @@ class UserController
                 header('Location:' . ROOT_URL . '/user/register');
                 exit();
             } else {
-                
+                // check email khong ton tai
+                $userModel = new UserModel();
+                $user = $userModel->getUserByEmail($_POST['email']);
+                if (!empty($user)) {
+                    $_SESSION['message'] = array('error' => 'email is exist');
+                    header('Location:' . ROOT_URL . '/user/register');
+                }
+                $data = array(
+                    'email' => $_POST['email'],
+                    'name' => $_POST['name'],
+                    'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
+                );
+                // create new user and send message
+                $create = $userModel->create($data);
+                // send email => wellcome websitene
+                $_SESSION['message'] = array('success' => 'create user successfully');
+
+                $to = $_POST['email'];
+                $from = "tabletkindfire@gmail.com";
+                $subject = "đăng ký thành công";
+                $content = "<h1>bạn đã đăng ký thành công mật khẩu là: " . $_POST['password'] . "</h1>";
+                Helper::send($to, $from, $subject, $content);
+
+                header('Location:' . ROOT_URL . '/user/register');
             }
         }
         // require_once BASE_PATH . '/app/views/users/create.php';

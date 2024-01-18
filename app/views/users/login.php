@@ -172,13 +172,11 @@
                                         }
                                     }
                                     ?>
-                                   <h2 class="title-4 mb-2">Create Account</h2>
+                                   <h2 class="title-4 mb-2">login</h2>
                                    <p class="desc-content">Please Register using account detail bellow.</p>
                                </div>
-                               <form action="<?= ROOT_URL ?>/user/save" method="post">
-                                   <div class="single-input-item mb-3">
-                                       <input name="name" type="text" placeholder="Your Name">
-                                   </div>
+                               <form action="<?= ROOT_URL ?>/user/checklogin" method="post">
+
                                    <div class="single-input-item mb-3">
                                        <input name="email" type="email" placeholder="Email or Username">
                                    </div>
@@ -197,7 +195,7 @@
                                        </div>
                                    </div>
                                    <div class="single-input-item mb-3">
-                                       <button class="btn obrien-button-2 primary-color">Register</button>
+                                       <button class="btn obrien-button-2 primary-color">Login</button>
                                    </div>
                                </form>
                            </div>
