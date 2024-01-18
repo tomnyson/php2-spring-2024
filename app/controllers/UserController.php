@@ -79,6 +79,8 @@ class UserController
                 $_SESSION['message'] = $errors;
                 header('Location:' . ROOT_URL . '/user/register');
                 exit();
+            } else {
+                
             }
         }
         // require_once BASE_PATH . '/app/views/users/create.php';

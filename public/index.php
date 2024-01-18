@@ -8,6 +8,12 @@ require_once BASE_PATH . '/app/DatabaseHelper.php';
 require_once BASE_PATH . '/app/Router.php';
 require BASE_PATH . '/vendor/autoload.php';
 ini_set('display_errors', 1);
+## load bien environment
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+// var_dump($_ENV);
+
 error_reporting(E_ALL);
 
 $url = $_GET['url'] ?? 'home/index';
