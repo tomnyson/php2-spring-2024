@@ -10,7 +10,6 @@ use PHPMailer\PHPMailer\Exception;
 
 class Helper
 {
-
     public static function send($to = 'tabletkindfire@gmail.com', $from = 'tabletkindfire@gmail.com', $sublect = 'notfication', $content = '')
     {
         try {
@@ -36,5 +35,11 @@ class Helper
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             return false;
         }
+    }
+
+    public static function redirectLink($path)
+    {
+        header('Location:' . ROOT_URL . $path);
+        exit();
     }
 }

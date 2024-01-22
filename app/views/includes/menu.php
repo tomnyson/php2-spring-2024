@@ -6,7 +6,7 @@
                     <div class="col-lg-2 col-xl-2 col-sm-6 col-6 col-custom">
                         <div class="header-logo d-flex align-items-center">
                             <a href="index.html">
-                                <img class="img-full" src="assets/images/logo/logo.png" alt="Header Logo">
+                                <img class="img-full" src="<?= ROOT_URL ?>/assets/images/logo/logo.png" alt="Header Logo">
                             </a>
                         </div>
                     </div>
@@ -97,8 +97,9 @@
                                     <ul class="dropdown-submenu dropdown-hover">
                                         <li><a href="frequently-questions.html">FAQ</a></li>
                                         <li><a href="my-account.html">My Account</a></li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a class="active" href="register.html">Register</a></li>
+                                        <li><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></li>
+                                        <li><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -118,8 +119,8 @@
                         <div class="header-right-area main-nav">
                             <ul class="nav">
                                 <li class="login-register-wrap d-none d-xl-flex">
-                                    <span><a href="login.html">Login</a></span>
-                                    <span><a class="active" href="register.html">Register</a></span>
+                                    <span><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></span>
+                                    <span><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a></span>
                                 </li>
                                 <li class="sidemenu-wrap d-none d-lg-flex">
                                     <a href="#">USD <i class="fa fa-caret-down"></i> </a>
@@ -333,8 +334,8 @@
                         <div class="header-right-area main-nav">
                             <ul class="nav">
                                 <li class="login-register-wrap d-none d-xl-flex">
-                                    <span><a href="login.html">Login</a></span>
-                                    <span><a class="active" href="register.html">Register</a></span>
+                                    <span><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></span>
+                                    <span><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a></span>
                                 </li>
                                 <li class="sidemenu-wrap d-none d-lg-flex">
                                     <a href="#">USD <i class="fa fa-caret-down"></i> </a>

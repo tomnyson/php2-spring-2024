@@ -43,21 +43,16 @@ class UserController
     }
     public function checklogin()
     {
-        var_dump("demo here");
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (count($this->validate($_POST)) > 0) {
 
                 $errors = $this->validate($_POST);
-                var_dump($errors);
-                die;
-                // $_SESSION['message'] = $errors;
-                // header('Location:' . ROOT_URL . '/user/login');
-                // exit();
+                $_SESSION['message'] = $errors;
+                Helper::redirectLink('/user/login');
             } else {
                 // check email khong ton tai
                 $userModel = new UserModel();
                 $user = $userModel->getUserByEmail($_POST['email']);
-                $user = $userModel->login($_POST['email'], $_POST['password']);
                 if (!empty($user)) {
 
                     $verify = password_verify($_POST['password'], $user[0]['password']);
@@ -148,15 +143,16 @@ class UserController
             if (count($this->validate($_POST)) > 0) {
                 $errors = $this->validate($_POST);
                 $_SESSION['message'] = $errors;
-                header('Location:' . ROOT_URL . '/user/register');
-                exit();
+                Helper::redirectLink("/user/register");
             } else {
                 // check email khong ton tai
                 $userModel = new UserModel();
                 $user = $userModel->getUserByEmail($_POST['email']);
+                // var_dump(!empty($user));
+                // die();
                 if (!empty($user)) {
                     $_SESSION['message'] = array('error' => 'email is exist');
-                    header('Location:' . ROOT_URL . '/user/register');
+                    Helper::redirectLink("/user/register");
                 }
                 $data = array(
                     'email' => $_POST['email'],
@@ -165,6 +161,7 @@ class UserController
                 );
                 // create new user and send message
                 $create = $userModel->create($data);
+                var_dump($create);
                 // send email => wellcome websitene
                 $_SESSION['message'] = array('success' => 'create user successfully');
 
@@ -172,7 +169,7 @@ class UserController
                 $from = "tabletkindfire@gmail.com";
                 $subject = "đăng ký thành công";
                 $content = "<h1>bạn đã đăng ký thành công mật khẩu là: " . $_POST['password'] . "</h1>";
-                Helper::send($to, $from, $subject, $content);
+                // Helper::send($to, $from, $subject, $content);
 
                 header('Location:' . ROOT_URL . '/user/register');
             }

@@ -51,5 +51,9 @@ $router->addRoute('user/save', ['UserController', 'save']);
 $router->addRoute('product/{id}', ['ProductController', 'show']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);
 
-$url = $_GET['url'] ?? 'home/index';
+$url = $_GET['url'];
+if ($url == "") {
+    header('Location:' . ROOT_URL . '/home/index');
+    exit;
+}
 $router->route($url);

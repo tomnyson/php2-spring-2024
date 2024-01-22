@@ -226,3 +226,7 @@
            <!-- Footer Area Start Here -->
            <!-- Footer Area End Here -->
            </div>
+
+           <?php
+            unset($_SESSION['message']);
+            ?>
