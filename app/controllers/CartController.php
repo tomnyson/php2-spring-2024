@@ -24,10 +24,11 @@ class CartController
     public function index()
     {
         ob_start();
-        $productModel = new ProductModel();
-        $product_bestseller = $productModel->getListProductLimit(8);
-        require_once BASE_PATH . '/app/views/home/index.php';
-        $title = "Home";
+        $productModel = new CartModel();
+        $userId = (int)$_SESSION['user_id'];
+        $carts = $productModel->getCartByUserId($userId);
+        require_once BASE_PATH . '/app/views/cart/index.php';
+        $title = "cart";
         $content = ob_get_clean();
         require_once BASE_PATH . '/app/views/masterLayout.php';
     }

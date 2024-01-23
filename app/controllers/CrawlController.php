@@ -65,7 +65,16 @@ class CrawlController
                 $imageUrl = $node->filter('.product-thumbnail img')->attr('data-lazyload');
                 $product->setImage("https://" . ltrim($imageUrl, "//"));
 
-                $price = $node->filter('.product-price')->text();
+                $price_text = $node->filter('.product-price')->text();
+                $price = 0;
+                if (trim($price_text) == "Liên hệ") {
+                    $price = 0;
+                } else {
+                    $numericPart = preg_replace('/[^\d.]/', '', $price_text);
+                    // If a number is found, use it as the price, otherwise default to 0
+                    $price = (float)$numericPart;
+                }
+
                 $product->setPrice($price);
 
                 // Add product to the list
