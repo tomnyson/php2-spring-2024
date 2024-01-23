@@ -11,7 +11,9 @@ class DatabaseHelper
 
     public function create($table, $data)
     {
+
         $keys = array_keys($data);
+        var_dump("keys", $keys);
         $fields = implode(', ', $keys);
         $placeholders = ':' . implode(', :', $keys);
 

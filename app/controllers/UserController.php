@@ -58,7 +58,8 @@ class UserController
                     $verify = password_verify($_POST['password'], $user[0]['password']);
                     if ($verify) {
                         $_SESSION['auth'] = 1;
-                        $_SESSION['user'] = $user[0]['id'];
+                        $_SESSION['user_id'] = $user[0]['id'];
+                        $_SESSION['username'] = $user[0]['name'];
                         header('Location:' . ROOT_URL . '/home/index');
                     } else {
                         $_SESSION['message'] = array('error' => 'Sai mat khau');

@@ -47,6 +47,9 @@ $router->addRoute('user/register', ['UserController', 'register']);
 $router->addRoute('user/login', ['UserController', 'login']);
 $router->addRoute('user/checklogin', ['UserController', 'checklogin']);
 $router->addRoute('user/save', ['UserController', 'save']);
+// carts
+$router->addRoute('cart/index', ['CartController', 'show']);
+$router->addRoute('cart/add', ['CartController', 'add']);
 // Dynamic routes
 $router->addRoute('product/{id}', ['ProductController', 'show']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);

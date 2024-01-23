@@ -125,7 +125,7 @@
                                         </div>
                                         <div class="product-title">
                                             <h4 class="title-2">
-                                                <a href="product-details.html"><?= $item['name'] ?></a>
+                                                <a href="<?= ROOT_URL . "/product/" . $item['id'] ?>"><?= $item['name'] ?></a>
                                             </h4>
                                         </div>
                                         <div class="price-box">
@@ -133,7 +133,7 @@
                                         </div>
                                     </div>
                                     <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
+                                        <a href="<?= ROOT_URL . "/cart/add?id={$item['id']}" ?>" title="Add To Cart">
                                             <i class="ion-bag"></i>
                                         </a>
                                         <a href="compare.html" title="Compare">
@@ -246,7 +246,7 @@
                         <div class="single-item">
                             <div class="single-product position-relative mb-30">
                                 <div class="product-image">
-                                    <a class="d-block" href="product-details.html">
+                                    <a class="d-block" href="<?= ROOT_URL . "/product/" . $item['id'] ?>">
                                         <img src="<?= $item['image'] ?>" alt="" class="product-image-1 w-100" />
                                         <img src="<?= $item['image'] ?>" alt="" class="product-image-2 position-absolute w-100" />
                                     </a>
@@ -261,7 +261,7 @@
                                     </div>
                                     <div class="product-title">
                                         <h4 class="title-2">
-                                            <a href="product-details.html"><?= $item['name'] ?></a>
+                                            <a href="<?= ROOT_URL . "/product/" . $item['id'] ?>"><?= $item['name'] ?></a>
                                         </h4>
                                     </div>
                                     <div class="price-box">
