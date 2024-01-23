@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div class="add-to_cart">
-                                    <a class="btn obrien-button primary-btn" href="cart.html">Add to cart</a>
+                                    <a class="btn obrien-button primary-btn" href="<?= ROOT_URL . "/cart/add?id={$detail[0]['id']}" ?>">Add to cart</a>
                                     <a class="btn obrien-button-2 treansparent-color pt-0 pb-0" href="wishlist.html">Add
                                         to wishlist</a>
                                 </div>
@@ -630,7 +630,7 @@
                                         </div>
                                     </div>
                                     <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
+                                        <a href="<?= ROOT_URL . "/cart/add?id={$item['id']}" ?>" title="Add To cart">
                                             <i class="ion-bag"></i>
                                         </a>
                                         <a href="compare.html" title="Compare">
@@ -671,7 +671,7 @@
                                         </div>
                                     </div>
                                     <div class="add-action d-flex position-absolute">
-                                        <a href="cart.html" title="Add To cart">
+                                        <a href="<?= ROOT_URL . "/cart/add?id={$item['id']}" ?>" title="Add To cart">
                                             <i class="ion-bag"></i>
                                         </a>
                                         <a href="compare.html" title="Compare">

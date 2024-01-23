@@ -64,12 +64,14 @@
                                         <li><a href="#">AUD - Australian Dollar</a></li>
                                     </ul>
                                 </li>
-                                <?php require_once BASE_PATH . '/app/controllers/CartController.php';
+                                <?php
 
-                                use Controllers\CartController;
+                                // require_once BASE_PATH . '/app/controllers/CartController.php';
 
-                                $cart = new CartController();
-                                $cart->renderCartMenu();
+                                // use Controllers\CartController;
+
+                                // $cart = new CartController();
+                                // $cart->renderCartMenu();
 
                                 ?>
 

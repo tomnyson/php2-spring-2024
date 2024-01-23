@@ -179,6 +179,7 @@
 
                                    <div class="single-input-item mb-3">
                                        <input name="email" type="email" placeholder="Email or Username">
+                                       <input name="callback" type="hidden" value="<?= isset($_GET['callback']) ? $_GET['callback'] : '' ?>">
                                    </div>
                                    <div class="single-input-item mb-3">
                                        <input name="password" type="password" placeholder="Enter your Password">

@@ -60,9 +60,15 @@ class UserController
                         $_SESSION['auth'] = 1;
                         $_SESSION['user_id'] = $user[0]['id'];
                         $_SESSION['username'] = $user[0]['name'];
+                        $callback = $_POST['callback'];
+                        if ($callback != '') {
+                            header('Location:' . $callback);
+                            exit();
+                        }
                         header('Location:' . ROOT_URL . '/home/index');
                     } else {
                         $_SESSION['message'] = array('error' => 'Sai mat khau');
+                        header('Location:' . ROOT_URL . '/user/login');
                     }
                 } else {
                     $_SESSION['message'] = array('error' => 'email is exist');

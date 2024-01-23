@@ -12,8 +12,11 @@ class CartController
     public function __construct()
     {
         if (!isset($_SESSION['user_id'])) {
-            Helper::redirectLink("/user/login?callback={$_SERVER['HTTP_REFERER']}");
+            $callUrl = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+            Helper::redirectLink("/user/login?callback={$callUrl}");
         }
+
+
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = [];
         }
@@ -46,19 +49,21 @@ class CartController
         try {
             $id =  (int)$_GET['id'];
             $userId = (int)$_SESSION['user_id'];
-            // get info detail of product
-            // check case exist or not exist in cart
-            // if not exist insert or update quantity
-            // check exist product in cart
+            /**
+             *  b1: lấy chi tiết sản phẩm
+             *  b2: kt sản phẩm có tồn tại trong giỏ hàng hay chưa? ()
+             *  b3: trường hợp 1: chưa có -> thêm vào
+             *      trường hợp 2: tăng số lượng lên => cập nhật 
+             */
 
             $productModel = new ProductModel();
             $product = $productModel->getProductById((int)$id);
-
+            // b1:
             if (!$product) {
                 throw new Exception("Product not found.");
             }
 
-            // check exist product in cart
+            // b2: kt sản phẩm có tồn tại trong giỏ hàng hay chưa? productId, userId
             $cartModel = new CartModel();
 
             $cart = $cartModel->getCartItem($userId, $id);
@@ -76,7 +81,7 @@ class CartController
                     'id' => $cart[0]['id'],
                 ));
             } else {
-                // case not exist
+                // trường hợp 1: chưa có -> thêm vào
                 $data = array(
                     'productId' => (int)($product[0]['id']),
                     'userId' => (int)$_SESSION['user_id'],
