@@ -134,7 +134,6 @@ class UserController
     public function create()
     {
 
-        echo "create";
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST['name']) && isset($_POST['email'])) {
                 echo "call action create";

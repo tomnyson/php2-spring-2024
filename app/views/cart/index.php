@@ -43,15 +43,21 @@
                                         <div class="quantity">
                                             <div class="cart-plus-minus">
                                                 <input class="cart-plus-minus-box" value="<?= $item['quantity'] ?>" type="text">
-                                                <div class="dec qtybutton">-</div>
-                                                <div class="inc qtybutton">+</div>
-                                                <div class="dec qtybutton"><i class="fa fa-minus"></i></div>
-                                                <div class="inc qtybutton"><i class="fa fa-plus"></i></div>
+
+                                                <!-- <div class="dec qtybutton"> <a href="<?= ROOT_URL . "/cart/remove?id={$item['id']}&type=sub" ?>">-</a></div>
+                                                </a>
+                                                <div class="inc qtybutton"> <a href="<?= ROOT_URL . "/cart/add?id={$item['id']}" ?>">+</a></div>
+                                                </a> -->
+
+                                                <div class="dec qtybutton"><a href="<?= ROOT_URL . "/cart/remove?id={$item['id']}&type=sub" ?>"><i class="fa fa-minus"></i></a></div>
+                                                <div class="inc qtybutton">
+                                                    <a href="<?= ROOT_URL . "/cart/add?id={$item['id']}" ?>"><i class="fa fa-plus"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="pro-subtotal"><span>$295.00</span></td>
-                                    <td class="pro-remove"><a href="#"><i class="ion-trash-b"></i></a></td>
+                                    <td class="pro-remove"><a href="<?= ROOT_URL . "/cart/remove?id={$item['id']}" ?>"><i class="ion-trash-b"></i></a></td>
                                 </tr>
                             <?php } ?>
                         </tbody>

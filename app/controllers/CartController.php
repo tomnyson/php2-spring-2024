@@ -97,6 +97,39 @@ class CartController
         }
     }
 
+    public function remove()
+    {
+
+        try {
+            $id =  (int)$_GET['id'];
+            $userId = (int)$_SESSION['user_id'];
+            /**
+             *  b1: lấy chi tiết sản phẩm
+             *  b2: kt sản phẩm có tồn tại trong giỏ hàng hay chưa? ()
+             *  b3: trường hợp 1: chưa có -> thêm vào
+             *      trường hợp 2: tăng số lượng lên => cập nhật 
+             */
+
+            $productModel = new ProductModel();
+            $product = $productModel->getProductById((int)$id);
+            // b1:
+            if (!$product) {
+                throw new Exception("Product not found.");
+            }
+
+            // b2: kt sản phẩm có tồn tại trong giỏ hàng hay chưa? productId, userId
+            $cartModel = new CartModel();
+
+            $cart = $cartModel->getCartItem($userId, $id);
+            if ($cart) {
+                $cart = $cartModel->remove($cart[0]["id"]);
+            }
+            header('Location:' . $_SERVER['HTTP_REFERER']);
+        } catch (Exception $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    }
+
     public function renderCartMenu()
     {
         $cartModel = new CartModel();

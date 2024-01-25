@@ -92,6 +92,7 @@ class DatabaseHelper
 
     public function delete($table, $conditions)
     {
+        var_dump("call here");
         $sql = "DELETE FROM $table";
 
         $whereConditions = [];
@@ -100,7 +101,7 @@ class DatabaseHelper
         }
 
         $sql .= " WHERE " . implode(' AND ', $whereConditions);
-
+        var_dump($sql);
         $stmt = $this->pdo->prepare($sql);
 
         foreach ($conditions as $key => $value) {
