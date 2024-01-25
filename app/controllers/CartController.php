@@ -135,12 +135,11 @@ class CartController
         $cartModel = new CartModel();
         $userId = (int)$_SESSION['user_id'];
         $cart = $cartModel->getCartByUserId($userId);
-        var_dump($cart);
         $totalPrice = 0;
         $itemsHtml = '';
-
+        $count = count($cart);
         foreach ($cart as $item) {
-            // $totalPrice += $item['price'] * $item['quantity'];
+            $totalPrice += $item['price'] * $item['quantity'];
             $itemsHtml .= <<<ITEM
             <div class="single-cart-item">
                 <div class="cart-img">
@@ -151,7 +150,7 @@ class CartController
                     <div class="cart-text-btn">
                         <div class="cart-qty">
                             <span>{$item['quantity']}×</span>
-                            <span class="cart-price">\${$item['price']}</span>
+                            <span class="cart-price">{$item['price']}đ</span>
                         </div>
                         <button type="button"><i class="ion-trash-b"></i></button>
                     </div>
@@ -164,13 +163,13 @@ class CartController
         <li class="minicart-wrap">
             <a href="#" class="minicart-btn toolbar-btn">
                 <i class="ion-bag"></i>
-                <span class="cart-item_count">{$totalPrice}</span>
+                <span class="cart-item_count">{$count}</span>
             </a>
             <div class="cart-item-wrapper dropdown-sidemenu dropdown-hover-2">
                 $itemsHtml
                 <div class="cart-price-total d-flex justify-content-between">
                     <h5>Total :</h5>
-                    <h5>\$$totalPrice</h5>
+                    <h5>{$totalPrice} đ</h5>
                 </div>
                 <div class="cart-links d-flex justify-content-center">
                     <a class="obrien-button white-btn" href="cart.html">View cart</a>

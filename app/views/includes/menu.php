@@ -68,10 +68,10 @@
 
                                 // require_once BASE_PATH . '/app/controllers/CartController.php';
 
-                                // use Controllers\CartController;
+                                use Controllers\CartController;
 
-                                // $cart = new CartController();
-                                // $cart->renderCartMenu();
+                                $cart = new CartController();
+                                $cart->renderCartMenu();
 
                                 ?>
 

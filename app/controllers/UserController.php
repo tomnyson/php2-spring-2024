@@ -175,12 +175,12 @@ class UserController
                 $from = "tabletkindfire@gmail.com";
                 $subject = "đăng ký thành công";
                 $content = "<h1>bạn đã đăng ký thành công mật khẩu là: " . $_POST['password'] . "</h1>";
-                // Helper::send($to, $from, $subject, $content);
 
                 header('Location:' . ROOT_URL . '/user/register');
+                exit();
             }
         }
-        // require_once BASE_PATH . '/app/views/users/create.php';
+        require_once BASE_PATH . '/app/views/users/create.php';
     }
 
     public function post()
