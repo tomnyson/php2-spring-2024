@@ -51,6 +51,8 @@ $router->addRoute('user/save', ['UserController', 'save']);
 $router->addRoute('cart/index', ['CartController', 'index']);
 $router->addRoute('cart/add', ['CartController', 'add']);
 $router->addRoute('cart/remove', ['CartController', 'remove']);
+// checkout
+$router->addRoute('checkout/index', ['CheckoutController', 'index']);
 // Dynamic routes
 $router->addRoute('product/{id}', ['ProductController', 'show']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);

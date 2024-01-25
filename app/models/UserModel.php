@@ -25,6 +25,11 @@ class UserModel
         $sql = "SELECT * FROM $this->table_name where email = '$email'";
         return $this->dbHelper->readWithCondition($sql);
     }
+    public function getUserByID($id = "")
+    {
+        $sql = "SELECT * FROM $this->table_name where id = '$id'";
+        return $this->dbHelper->readWithCondition($sql);
+    }
 
     public function create($data = [])
     {
