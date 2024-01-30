@@ -2,11 +2,11 @@
 
 namespace Models;
 
-class CartModel
+class OderModel
 {
 
     private $conn;
-    private $table_name = "carts";
+    private $table_name = "orders";
     private $dbHelper;
     // chạy khi new class
     public function __construct()
@@ -20,13 +20,13 @@ class CartModel
         return $this->dbHelper->read($this->table_name);
     }
 
-    public function getCartByUserId($userId)
+    public function getOderByUserId($userId)
     {
-        $sql = "SELECT carts.*, products.* 
-        FROM carts 
+        $sql = "SELECT Oders.*, products.* 
+        FROM Oders 
         INNER JOIN products 
-        ON carts.productId = products.id 
-        WHERE carts.userId = :userId";
+        ON Oders.productId = products.id 
+        WHERE Oders.userId = :userId";
 
         return $this->dbHelper->readWithCondition($sql, array('userId' => $userId));
     }
@@ -39,7 +39,7 @@ class CartModel
     }
 
 
-    public function insert($data)
+    public function create($data)
     {
         return $this->dbHelper->create($this->table_name, $data);
     }
@@ -54,19 +54,10 @@ class CartModel
         return $this->dbHelper->delete($this->table_name, array('id' => $id));
     }
 
-    public function getCartItem($userId, $product_id)
+    public function getOderItem($userId, $product_id)
     {
-        $sql = "SELECT * FROM carts WHERE userId = :userId AND productId = :productId";
+        $sql = "SELECT * FROM Oders WHERE userId = :userId AND productId = :productId";
 
         return $this->dbHelper->readWithCondition($sql, array('userId' => $userId, 'productId' => $product_id));
-    }
-    public function getToTalCartByUser($userId)
-    {
-        $sql = "select sum(quantity * price) as total from carts
-        inner join products on carts.productId = products.id
-        where userId=:userId
-        ";
-
-        return $this->dbHelper->readWithCondition($sql, array('userId' => $userId));
     }
 }

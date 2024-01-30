@@ -7,6 +7,7 @@ use Models\CartModel;
 use Models\ProductModel;
 use Models\UserModel;
 use Helper\Helper;
+use Models\OderModel;
 
 class CheckoutController
 {
@@ -43,13 +44,30 @@ class CheckoutController
         // detail user hien tai =>
 
         ob_start();
-        $productModel = new ProductModel();
-        $detail = $productModel->getProductById((int)$id);
+        var_dump($_POST);
+        // checkout
+        $cartModel = new CartModel();
+        $totalMount = $cartModel->getToTalCartByUser((int)$_SESSION['user_id']);
+        var_dump("total", $totalMount);
+        $data = array(
+            'address' => $_POST['address'],
+            'sdt' => $_POST['phone'],
+            "userId" => (int)$_SESSION['user_id'],
+            "note" => $_POST['notes'] ?? "",
+            "status" => 0,
+            "createdAt" => date('Y-m-d H:i:s'),
+            'totalAmount' => (float)$totalMount[0]['total']
+
+        );
+
+        $oderModel = new OderModel();
+        // create new user and send message
+        $create = $oderModel->create($data);
         require_once BASE_PATH . '/app/views/product/detail.php';
-        $title = $detail[0]['name'];
         $content = ob_get_clean();
         require_once BASE_PATH . '/app/views/masterLayout.php';
     }
+
 
     public function add()
     {

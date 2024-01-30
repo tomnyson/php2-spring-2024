@@ -51,6 +51,7 @@ class UserController
                 Helper::redirectLink('/user/login');
             } else {
                 // check email khong ton tai
+                // module B
                 $userModel = new UserModel();
                 $user = $userModel->getUserByEmail($_POST['email']);
                 if (!empty($user)) {

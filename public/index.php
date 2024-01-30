@@ -56,6 +56,8 @@ $router->addRoute('checkout/index', ['CheckoutController', 'index']);
 // Dynamic routes
 $router->addRoute('product/{id}', ['ProductController', 'show']);
 $router->addRoute('profile/{slug}', ['ProfileController', 'show']);
+// o
+$router->addRoute('checkout/save', ['CheckoutController', 'save']);
 
 $url = $_GET['url'];
 if ($url == "") {
