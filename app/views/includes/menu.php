@@ -48,6 +48,15 @@
                         <div class="header-right-area main-nav">
                             <ul class="nav">
                                 <li class="login-register-wrap d-none d-xl-flex">
+                                    <?php
+                                    if (isset($_SESSION['user_id'])) {
+                                    ?>
+                                        <span><a href="<?= ROOT_URL . "/user/index" ?>">My Account</a></span>
+                                        <span><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></span>
+                                        <span><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a></span>
+                                    <?php
+                                    }
+                                    ?>
                                     <span><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></span>
                                     <span><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a></span>
                                 </li>
@@ -65,14 +74,14 @@
                                     </ul>
                                 </li>
                                 <?php
+                                //     if (isset($_SESSION['user_id'])) { 
+                                //     use Controllers\CartController;
 
-                                // require_once BASE_PATH . '/app/controllers/CartController.php';
+                                //     $cart = new CartController();
+                                //     $cart->renderCartMenu();
 
-                                use Controllers\CartController;
 
-                                $cart = new CartController();
-                                $cart->renderCartMenu();
-
+                                // }
                                 ?>
 
                                 <li class="mobile-menu-btn d-lg-none">

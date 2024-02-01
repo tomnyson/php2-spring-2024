@@ -5,16 +5,23 @@ namespace Controllers;
 use Models\UserModel as UserModel;
 use Models\ProductModel;
 use Helper\Helper;
+use Models\OderModel;
 
 class UserController
 {
     public function index()
     {
-        $userModel = new UserModel();
-        $users = $userModel->getAll();
-        // header("Content-Type: application/json");
-        // echo json_encode($users);
-        require_once BASE_PATH . '/app/views/users/index.php';
+
+        ob_start();
+        $productModel = new ProductModel();
+        $product_bestseller = $productModel->getListProductLimit(8);
+        $orderModel = new OderModel();
+        $orders = $orderModel->getOderByUserId((int)$_SESSION['user_id']);
+        var_dump($orders);
+        require_once BASE_PATH . '/app/views/profile/my-account.php';
+        $title = "Home";
+        $content = ob_get_clean();
+        require_once BASE_PATH . '/app/views/masterLayout.php';
     }
 
     public function register()

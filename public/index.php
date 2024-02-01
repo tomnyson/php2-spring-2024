@@ -59,6 +59,8 @@ $router->addRoute('profile/{slug}', ['ProfileController', 'show']);
 // o
 $router->addRoute('checkout/save', ['CheckoutController', 'save']);
 
+$router->addRoute('user', ['UserController', 'index']);
+
 $url = $_GET['url'];
 if ($url == "") {
     header('Location:' . ROOT_URL . '/home/index');

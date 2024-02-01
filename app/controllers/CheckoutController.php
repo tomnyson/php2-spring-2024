@@ -48,7 +48,6 @@ class CheckoutController
         // checkout
         $cartModel = new CartModel();
         $totalMount = $cartModel->getToTalCartByUser((int)$_SESSION['user_id']);
-        var_dump("total", $totalMount);
         $data = array(
             'address' => $_POST['address'],
             'sdt' => $_POST['phone'],
@@ -63,7 +62,23 @@ class CheckoutController
         $oderModel = new OderModel();
         // create new user and send message
         $create = $oderModel->create($data);
-        require_once BASE_PATH . '/app/views/product/detail.php';
+
+        $lastId = $oderModel->getLastId($data['userId']);
+        var_dump($lastId);
+        $carts = $cartModel->getCartByUserId((int)$_SESSION['user_id']);
+        foreach ($carts as $cart) {
+            $data = array(
+                'orderId' => $lastId[0]['latestId'],
+                'productId' => $cart['productId'],
+                'quantity' => $cart['quantity'],
+                'price' => $cart['price'],
+            );
+            $oderModel->createOrderItem($data);
+        }
+        // xoa gio hang
+        $cartModel->removeCartByUserId((int)$_SESSION['user_id']);
+
+        require_once BASE_PATH . '/app/views/checkout/orderSuccess.php';
         $content = ob_get_clean();
         require_once BASE_PATH . '/app/views/masterLayout.php';
     }

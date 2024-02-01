@@ -54,6 +54,12 @@ class CartModel
         return $this->dbHelper->delete($this->table_name, array('id' => $id));
     }
 
+    public function removeCartByUserId($userId)
+    {
+        return $this->dbHelper->delete($this->table_name, array('userId' => $userId));
+    }
+
+
     public function getCartItem($userId, $product_id)
     {
         $sql = "SELECT * FROM carts WHERE userId = :userId AND productId = :productId";

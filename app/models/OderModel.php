@@ -22,11 +22,15 @@ class OderModel
 
     public function getOderByUserId($userId)
     {
-        $sql = "SELECT Oders.*, products.* 
-        FROM Oders 
-        INNER JOIN products 
-        ON Oders.productId = products.id 
-        WHERE Oders.userId = :userId";
+        $sql = "SELECT orders.*, users.*, orderDetails.*, products.*, orders.id as orderId, products.id as productId
+        FROM orders 
+        INNER JOIN users
+        on orders.userId = users.id
+        inner join orderDetails
+        on orderDetails.orderId = orders.id
+        inner join products
+        on orderDetails.productId = products.id
+        WHERE orders.userId = :userId";
 
         return $this->dbHelper->readWithCondition($sql, array('userId' => $userId));
     }
@@ -42,6 +46,10 @@ class OderModel
     public function create($data)
     {
         return $this->dbHelper->create($this->table_name, $data);
+    }
+    public function createOrderItem($data)
+    {
+        return $this->dbHelper->create("orderDetails", $data);
     }
 
     public function update($data, $conditions)
@@ -59,5 +67,10 @@ class OderModel
         $sql = "SELECT * FROM Oders WHERE userId = :userId AND productId = :productId";
 
         return $this->dbHelper->readWithCondition($sql, array('userId' => $userId, 'productId' => $product_id));
+    }
+    public function getLastID($userId)
+    {
+        $sql = "SELECT MAX(id) as latestId FROM orders WHERE userId = :userId";
+        return $this->dbHelper->readWithCondition($sql, array('userId' => $userId));
     }
 }
