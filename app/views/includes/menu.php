@@ -1,3 +1,8 @@
+<?php
+
+use Controllers\CartController;
+
+?>
 <div class="main-header">
     <div class="container container-default custom-area">
         <div class="row">
@@ -47,41 +52,34 @@
                     <div class="col-lg-2 col-xl-3 col-sm-6 col-6 col-custom">
                         <div class="header-right-area main-nav">
                             <ul class="nav">
-                                <li class="login-register-wrap d-none d-xl-flex">
-                                    <?php
-                                    if (isset($_SESSION['user_id'])) {
-                                    ?>
-                                        <span><a href="<?= ROOT_URL . "/user/index" ?>">My Account</a></span>
+
+                                <?php if (isset($_SESSION['user_id'])) {
+                                ?>
+                                    <li class="login-register-wrap d-none d-xl-flex">
+                                        <span><a href="<?= ROOT_URL . "/user/login" ?>">Logout</a></span>
+                                    </li>
+                                    <li class="sidemenu-wrap d-none d-lg-flex">
+                                        <a href="<?= ROOT_URL . "/user/index" ?>">MY ACCOUNT <i class="fa fa-caret-down"></i> </a>
+                                        <ul class="dropdown-sidemenu dropdown-hover-2 dropdown-language">
+                                            <li><a href="<?= ROOT_URL . "/user/index" ?>">Profile</a></li>
+                                            <li><a href="<?= ROOT_URL . "/user/logout" ?>">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                <?php
+                                } else { ?>
+                                    <li class="login-register-wrap d-none d-xl-flex">
                                         <span><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></span>
                                         <span><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a></span>
-                                    <?php
-                                    }
-                                    ?>
-                                    <span><a href="<?= ROOT_URL . "/user/login" ?>">Login</a></span>
-                                    <span><a class="active" href="<?= ROOT_URL . "/user/register" ?>">Register</a></span>
-                                </li>
-                                <li class="sidemenu-wrap d-none d-lg-flex">
-                                    <a href="#">USD <i class="fa fa-caret-down"></i> </a>
-                                    <ul class="dropdown-sidemenu dropdown-hover-2 dropdown-language">
-                                        <li><a href="#">USD - US Dollar</a></li>
-                                        <li><a href="#">EUR - Euro</a></li>
-                                        <li><a href="#">GBP - British Pound</a></li>
-                                        <li><a href="#">INR - Indian Rupee</a></li>
-                                        <li><a href="#">BDT - Bangladesh Taka</a></li>
-                                        <li><a href="#">JPY - Japan Yen</a></li>
-                                        <li><a href="#">CAD - Canada Dollar</a></li>
-                                        <li><a href="#">AUD - Australian Dollar</a></li>
-                                    </ul>
-                                </li>
-                                <?php
-                                //     if (isset($_SESSION['user_id'])) { 
-                                //     use Controllers\CartController;
+                                    </li>
 
-                                //     $cart = new CartController();
-                                //     $cart->renderCartMenu();
+                                <?php }
+                                ?>
 
+                                <?php if (isset($_SESSION['user_id'])) {
 
-                                // }
+                                    $cart = new CartController();
+                                    $cart->renderCartMenu();
+                                }
                                 ?>
 
                                 <li class="mobile-menu-btn d-lg-none">

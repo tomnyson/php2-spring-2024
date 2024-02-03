@@ -5,8 +5,7 @@ namespace Helper;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
-
+use Symfony\Component\Mime\Message;
 
 class Helper
 {
@@ -41,5 +40,36 @@ class Helper
     {
         header('Location:' . ROOT_URL . $path);
         exit();
+    }
+    /** function return status and color */
+    public static function getMessageWithStatus($status)
+    {
+        $message = "";
+        switch ($status) {
+            case 0:
+                return $message = 'đã hủy';
+                break;
+            case 1:
+                return $message = 'đang chờ xử lý';
+                break;
+            case 2:
+                return $message = 'đã xử lý';
+                break;
+            case 3:
+                return $message = 'đang giao hàng';
+
+                break;
+            case 4:
+                return $message = 'đã giao hàng';
+                break;
+            case 5:
+                return $message = 'hoàn thành';
+                break;
+
+            default:
+                $message = '';
+                break;
+        }
+        return 0;
     }
 }

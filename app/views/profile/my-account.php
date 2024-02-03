@@ -78,6 +78,7 @@
                                                         <tbody>
                                                             <?php
                                                             foreach ($orders as $orders_item) {
+                                                                $detail_link = ROOT_URL . '/user/order?id=' . $orders_item['orderId'];
                                                                 echo "<tr>";
                                                                 echo "<td>" . $orders_item['orderId'] . "</td>";
                                                                 echo "<td>" . $orders_item['createdAt'] . "</td>";
@@ -86,7 +87,7 @@
                                                                 }
 
                                                                 echo "<td>" . $orders_item['totalAmount'] . "</td>";
-                                                                echo "<td><a href='cart.html' class='btn obrien-button-2 primary-color rounded-0'>View</a></td>";
+                                                                echo "<td><a href='$detail_link' class='btn obrien-button-2 primary-color rounded-0'>View</a></td>";
                                                                 echo "</tr>";
                                                             }
                                                             ?>

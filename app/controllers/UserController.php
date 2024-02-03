@@ -17,9 +17,20 @@ class UserController
         $product_bestseller = $productModel->getListProductLimit(8);
         $orderModel = new OderModel();
         $orders = $orderModel->getOderByUserId((int)$_SESSION['user_id']);
-        var_dump($orders);
         require_once BASE_PATH . '/app/views/profile/my-account.php';
         $title = "Home";
+        $content = ob_get_clean();
+        require_once BASE_PATH . '/app/views/masterLayout.php';
+    }
+    public function order()
+    {
+
+        ob_start();
+        $productModel = new ProductModel();
+        $orderModel = new OderModel();
+        $orders = $orderModel->getOderDetailById(19);
+        require_once BASE_PATH . '/app/views/profile/order.php';
+        $title = "Order Detail";
         $content = ob_get_clean();
         require_once BASE_PATH . '/app/views/masterLayout.php';
     }
@@ -197,15 +208,5 @@ class UserController
             echo "call action create";
             var_dump($_POST);
         }
-    }
-
-    public function update()
-    {
-        echo "hello world";
-    }
-
-    public function delete()
-    {
-        echo "hello world";
     }
 }

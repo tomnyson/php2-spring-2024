@@ -22,7 +22,19 @@ class OderModel
 
     public function getOderByUserId($userId)
     {
-        $sql = "SELECT orders.*, users.*, orderDetails.*, products.*, orders.id as orderId, products.id as productId
+        $sql = "SELECT orders.*, users.*, orders.status as orderStatus, orders.id as orderId
+        FROM orders 
+        INNER JOIN users
+        on orders.userId = users.id
+        WHERE orders.userId = :userId";
+
+        return $this->dbHelper->readWithCondition($sql, array('userId' => $userId));
+    }
+
+
+    public function getOderDetailById($orderId)
+    {
+        $sql = "SELECT orders.*, users.*, orderDetails.*, products.*, orders.id as orderId, products.id as productId, orders.status as orderStatus,  orders.id as orderId
         FROM orders 
         INNER JOIN users
         on orders.userId = users.id
@@ -30,9 +42,9 @@ class OderModel
         on orderDetails.orderId = orders.id
         inner join products
         on orderDetails.productId = products.id
-        WHERE orders.userId = :userId";
+        WHERE orders.id = :orderId";
 
-        return $this->dbHelper->readWithCondition($sql, array('userId' => $userId));
+        return $this->dbHelper->readWithCondition($sql, array('orderId' => $orderId));
     }
 
 

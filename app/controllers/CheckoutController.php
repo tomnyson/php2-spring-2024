@@ -53,7 +53,7 @@ class CheckoutController
             'sdt' => $_POST['phone'],
             "userId" => (int)$_SESSION['user_id'],
             "note" => $_POST['notes'] ?? "",
-            "status" => 0,
+            "status" => 1,
             "createdAt" => date('Y-m-d H:i:s'),
             'totalAmount' => (float)$totalMount[0]['total']
 
@@ -64,7 +64,6 @@ class CheckoutController
         $create = $oderModel->create($data);
 
         $lastId = $oderModel->getLastId($data['userId']);
-        var_dump($lastId);
         $carts = $cartModel->getCartByUserId((int)$_SESSION['user_id']);
         foreach ($carts as $cart) {
             $data = array(
@@ -198,7 +197,8 @@ class CheckoutController
             </div>
     ITEM;
         }
-
+        $checkout_link = ROOT_URL . '/checkout/index';
+        $cart_link = ROOT_URL . '/cart/index';
         echo <<<EOT
         <li class="minicart-wrap">
             <a href="#" class="minicart-btn toolbar-btn">
@@ -212,8 +212,8 @@ class CheckoutController
                     <h5>{$totalPrice} đ</h5>
                 </div>
                 <div class="cart-links d-flex justify-content-center">
-                    <a class="obrien-button white-btn" href="cart.html">View cart</a>
-                    <a class="obrien-button white-btn" href="checkout.html">Checkout</a>
+                    <a class="obrien-button white-btn" href="$cart_link">View cart</a>
+                    <a class="obrien-button white-btn" href="$checkout_link">Checkout</a>
                 </div>
             </div>
         </li>
